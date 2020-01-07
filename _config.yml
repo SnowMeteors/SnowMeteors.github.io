@@ -126,12 +126,10 @@ live2d:
     show: true     #移动端是否显示
   react:
     opacity: 0.6    #透明度设置
-
-# 备份hexo到远端
 backup:
   type: git
   theme: yelee
-  message: Back up blog
+  message: Back up my blog
   repository:
-    github: git@github.com:TRHX/TRHX.github.io.git,backup
-    coding: git@git.dev.tencent.com:TRHX/TRHX.git,backup
+    github: git@github.com:SnowMeteors/SnowMeteors.github.io.git,hexo
+#    coding: git@git.dev.tencent.com:TRHX/TRHX.git,backup
