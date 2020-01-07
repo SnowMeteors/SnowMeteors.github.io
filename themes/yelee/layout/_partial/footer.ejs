@@ -9,6 +9,7 @@
                  我的青春回忆录
             </div>
         </div>
+
         <% if (theme.visit_counter.on) { %>
             <div class="visit">
                 <% if (theme.visit_counter.site_visit) { %>
@@ -18,7 +19,7 @@
                     </span>
                 <% } %>
                 <% if (theme.visit_counter.site_visit && theme.visit_counter.page_visit) { %>
-                    <span>| </span>
+<!--                    <span>| </span>-->
                 <% } %>
                 <% if (theme.visit_counter.page_visit) { %>
                     <span id="busuanzi_container_page_pv" style='display:none'>
@@ -30,3 +31,4 @@
         <% } %>
     </div>
 </footer>
+
