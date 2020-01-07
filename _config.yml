@@ -99,7 +99,7 @@ theme: yelee
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/SnowMeteors/SnowMeteors.github.io.git
+  repository: https://github.com/SnowMeteors/SnowMeteors.github.io.git
   branch: master
 
 # 是否开启字数统计
