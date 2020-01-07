@@ -123,7 +123,7 @@ live2d:
     width: 220
 #    height: 300
   mobile:
-    show: true     #移动端是否显示
+    show: false     #移动端是否显示
   react:
     opacity: 0.6    #透明度设置
 backup:
