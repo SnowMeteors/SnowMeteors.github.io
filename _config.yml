@@ -126,6 +126,7 @@ live2d:
     show: false     #移动端是否显示
   react:
     opacity: 0.6    #透明度设置
+
 #hexo b设置失败我也不知道啥原因
 #我这里的备份完整命令
 #hexo b && git push origin hexo

@@ -59,7 +59,7 @@
         li:hover {
             background: none;
             font-weight: bold;
-        };
+        }
     }
     .mid-col {
         position:absolute;
@@ -94,18 +94,21 @@
     .profilepic{
         text-align: center;
         display: block;
-        border: 5px solid #fff;
+        //border: 5px solid #fff;
+        border-width : 4px;
+        border-style : solid;
+        border-color: rgba(0, 0, 0, 0);
         border-radius: 50%;
         width: 128 + base-font-size - 16;
         height: @width;
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-        background: #88acdb;
+        //background: #88acdb;
         -webkit-box-orient: horizontal;
         -webkit-box-pack: center;
         -webkit-box-align: center;
-        text-align: center;
+        //text-align: center;
         img{
             width: 100%;
             height: 100%;
@@ -116,20 +119,24 @@
             -webkit-animation-delay: .3s;
         }
         &:hover {
-            background: white;
-            border: 5px solid #88acdb;
-            box-shadow: 0 0 1.5em #88acdb;
-            animation: profilepic .15s linear infinite alternate;
-            -webkit-animation: profilepic .15s linear infinite alternate; 
+            //background: white;
+            border: 4px solid #f5dfc6;
+            //box-shadow: 0 0 1.5em #88acdb;
+            //animation: profilepic .15s linear infinite alternate;
+            //-webkit-animation: profilepic .15s linear infinite alternate;
+            animation: profilepic 5s linear infinite;
+            -webkit-animation: profilepic 5s linear infinite; // profilepic 动画，周期 5 秒，速度不变，无限循环
         }
         @keyframes profilepic {
             0% {
-                right: 4px;
-                top: 1x;
+                //right: 4px;
+                //top: 1x;
+                transform: rotate(360deg);
             }
             100% {
-                right: 0px;
-                top: -1px;
+                //right: 0px;
+                //top: -1px;
+                transform: rotate(0deg);
             }
         }
     }
@@ -319,7 +326,7 @@
             a {
                 color: #88acdb;
             }
-        };
+        }
    }
 }
 
