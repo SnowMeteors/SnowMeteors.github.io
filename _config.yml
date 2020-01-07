@@ -126,6 +126,9 @@ live2d:
     show: false     #移动端是否显示
   react:
     opacity: 0.6    #透明度设置
+#hexo b设置失败我也不知道啥原因
+#查了半天资料，后面发现要备份只能使用
+#git push origin hexo 无奈
 backup:
   type: git
   theme: yelee
