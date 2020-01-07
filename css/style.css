@@ -562,7 +562,7 @@ a {
   width: 100%;
 }
 #header a {
-  color: #696969;
+  color: #000;
 }
 #header a:hover {
   color: #b0a0aa;
@@ -664,9 +664,9 @@ a {
 }
 #header .header-subtitle {
   text-align: center;
-  color: #999;
-  font-size: 0.875rem;
-  line-height: 1.75;
+  color: #868686;
+  font-size: 0.9375rem;
+  line-height: 2.5;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
