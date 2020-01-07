@@ -99,7 +99,7 @@ theme: yelee
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/SnowMeteors/SnowMeteors.github.io.git
+  repo: https://github.com/SnowMeteors/SnowMeteors.github.io.git
   branch: master
 
 # 是否开启字数统计
@@ -130,6 +130,6 @@ backup:
   type: git
   theme: yelee
   message: Back up my blog
-  repository:
+  repo:
     github: git@github.com:SnowMeteors/SnowMeteors.github.io.git,hexo
 #    coding: git@git.dev.tencent.com:TRHX/TRHX.git,backup
