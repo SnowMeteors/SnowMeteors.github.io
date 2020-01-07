@@ -11,18 +11,18 @@ $("body").click(function(e) {
       y = e.pageY;
   $i.css({
     "z-index": 144469,
-    "top": y - 20,
-    "left": x,
+    "top": y - 40,
+    "left": x - 25,
     "position": "absolute",
     "font-weight": "bold",
-    "color": "#f00"
+    "color": "#64d2e6"
   });
   $("body").append($i);
   $i.animate({
-        "top": y - 180,
+        "top": y - 150,
         "opacity": 0
       },
-      1500,
+      1900,
       function() {
         $i.remove()
       })
