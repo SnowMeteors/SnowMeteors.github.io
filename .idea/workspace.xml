@@ -10,12 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85d7e442-6b3f-44e6-a210-0f60d90d4589" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/after-footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/after-footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/src/love.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/src/love.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
       <updated>1578304369673</updated>
       <workItem from="1578304372393" duration="10203000" />
       <workItem from="1578316665214" duration="2054000" />
-      <workItem from="1578361129109" duration="8755000" />
+      <workItem from="1578361129109" duration="9363000" />
     </task>
     <servers />
   </component>
