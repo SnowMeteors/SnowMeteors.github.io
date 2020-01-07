@@ -13,10 +13,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/after-footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/after-footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/article.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/article.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/main.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/main.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/tagcloud.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/tagcloud.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -70,10 +69,24 @@
       <workItem from="1578361129109" duration="9634000" />
       <workItem from="1578375080270" duration="1630000" />
       <workItem from="1578376844498" duration="3542000" />
+      <workItem from="1578380793433" duration="38000" />
+      <workItem from="1578381947604" duration="20000" />
+      <workItem from="1578383005981" duration="10000" />
+      <workItem from="1578395721348" duration="2491000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1578395773881">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1578395773881" />
+    <state x="477" y="193" key="SettingsEditor" timestamp="1578395764891">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="477" y="193" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578395764891" />
   </component>
 </project>

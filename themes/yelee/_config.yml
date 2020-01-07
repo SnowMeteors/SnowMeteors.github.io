@@ -16,6 +16,7 @@ menu:
 # Link to your avatar | 填写头像地址
 avatar: https://avatars0.githubusercontent.com/u/47601098?s=460&v=4
 
+
 # Small icon of Your site | 站点小图标地址
 favicon: /img/favicon.ico
 
@@ -287,7 +288,7 @@ github_widget: false
 progressBar:
   on: true
   type: "minimal"  # Keep Quotes | 保留引号避免出错
-  color: pink
+  color: orange
 
 CDN:
   jquery: //cdn.bootcss.com/jquery/2.2.4/jquery.min.js
