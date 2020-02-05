@@ -12,9 +12,18 @@
     <list default="true" id="85d7e442-6b3f-44e6-a210-0f60d90d4589" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/hello-world.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/about/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/source/background/bg-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/background/bg-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/source/background/bg-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/background/bg-6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/main.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/main.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_variables.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_variables.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/src/love.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/src/love.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +35,7 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.deploy_git" />
   </component>
   <component name="ProjectId" id="1W15gDDvgv359WduE1lopWwA7gS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -72,7 +81,12 @@
       <workItem from="1578380793433" duration="38000" />
       <workItem from="1578381947604" duration="20000" />
       <workItem from="1578383005981" duration="10000" />
-      <workItem from="1578395721348" duration="2491000" />
+      <workItem from="1578395721348" duration="6437000" />
+      <workItem from="1578402172406" duration="10000" />
+      <workItem from="1578402371802" duration="2053000" />
+      <workItem from="1578406814265" duration="94000" />
+      <workItem from="1578408537219" duration="563000" />
+      <workItem from="1580880695397" duration="1813000" />
     </task>
     <servers />
   </component>
@@ -80,13 +94,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Notifications" timestamp="1578395773881">
+    <state x="552" y="178" key="#Inspections" timestamp="1578402638816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1578395773881" />
+    <state x="552" y="178" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1578402638816" />
+    <state x="552" y="178" key="#Notifications" timestamp="1580881390875">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1580881390875" />
     <state x="477" y="193" key="SettingsEditor" timestamp="1578395764891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="477" y="193" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578395764891" />
+    <state x="419" y="208" width="917" height="600" key="find.popup" timestamp="1580883000486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="419" y="208" width="917" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580883000486" />
   </component>
 </project>

@@ -41,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -116,11 +116,11 @@ live2d:
     use: live2d-widget-model-wanko
   display:
     # 水平位置
-    hOffset: -30
+    hOffset: -15
     # 垂直位置
     vOffset: -80
     position: right
-    width: 220
+    width: 200
 #    height: 300
   mobile:
     show: false     #移动端是否显示
@@ -138,5 +138,7 @@ backup:
   repository:
     github: git@github.com:SnowMeteors/SnowMeteors.github.io.git,hexo
 #    coding: git@git.dev.tencent.com:TRHX/TRHX.git,backup
+aplayer:
+  meting: true
 
 

@@ -121,10 +121,10 @@ youyan:
 ## "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
 ## "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
 ## "0": white-gray background | 淳朴灰白背景
-background_image: 5
+background_image: 7
 
 # Base Font Size | 字号调节
-base_font_size: 16  #px, 16 - 24
+base_font_size: 17  #px, 16 - 24
 
 ## General Color Scheme | 主题配色方案 
 ## 可用值 Value: yilia
@@ -133,7 +133,7 @@ color_scheme:
 highlight_style:
   #on: true
   inline_code: 5  # Value: 0 - 9 可选
-  code_block: 4  # Value: 0 - 4
+  code_block: 1  # Value: 0 - 4
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式
@@ -141,7 +141,7 @@ highlight_style:
 
 blockquote_style:
   #on: true
-  blockquote: 2  # Value: 0 - 7 可选
+  blockquote: 1  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
 
 # Headings Style | 标题风格
@@ -152,7 +152,7 @@ heading_style: 0 # Value: 0 - 2
 list_style: 0  # value: 0 - 12 可选
 
 # 左边栏宽度 px
-left_col_width: 300
+left_col_width: 320
 
 # Copyright info. of post | 文末版权信息
 copyright: true
@@ -174,24 +174,24 @@ jquery_ui: false
 
 # Max width of right cloumn | 限制右侧内容的宽带 
 limit_article_width: 
-  on: false
-  max_width: 60 # em
+  on: true
+  max_width: 85 # em
 
 # >>> Small features | 小功能设置 <<<
 
 # 是否开启边栏多标签切换
 # Birdhouse button in left column
-tagcloud: true
+tagcloud: false
 
 # Blogroll, Link exchange | 友情链接
-friends:
-  Hexo: https://hexo.io
-  GitHub: https://pages.github.com/
-  MOxFIVE: http://moxfive.xyz/
-#friends: false
+#friends:
+#  Hexo: https://hexo.io
+#  GitHub: https://pages.github.com/
+#  MOxFIVE: http://moxfive.xyz/
+friends: false
 
 #是否开启“关于我”。
-aboutme: 专注于前端
+aboutme: 每一刻都是崭新的
 #aboutme: false
 
 # Open link in a new tab | 是否在新窗口打开链接
@@ -303,3 +303,10 @@ CDN:
   clipboard: //cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js
   mathjax: //cdn.bootcss.com/mathjax/2.6.1/MathJax.js
   scrollreveal: //cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js
+ 
+# visitors count
+counter: true
+
+aplayer:
+  enable: true
+
