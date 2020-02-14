@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="85d7e442-6b3f-44e6-a210-0f60d90d4589" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.deploy_git/js/src/value.js" beforeDir="false" afterPath="$PROJECT_DIR$/.deploy_git/js/src/value.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Study/Code Project/C++/职工管理系统" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -74,6 +74,7 @@
       <workItem from="1578406814265" duration="94000" />
       <workItem from="1578408537219" duration="563000" />
       <workItem from="1580880695397" duration="2211000" />
+      <workItem from="1580895798957" duration="37000" />
     </task>
     <servers />
   </component>
@@ -89,6 +90,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1580881390875" />
+    <state x="732" y="295" key="FileChooserDialogImpl" timestamp="1580895830997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="295" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580895830997" />
     <state x="477" y="193" key="SettingsEditor" timestamp="1578395764891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
