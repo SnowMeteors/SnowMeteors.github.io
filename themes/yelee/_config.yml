@@ -149,10 +149,10 @@ blockquote_style:
 heading_style: 0 # Value: 0 - 2
 
 ## List style type (ul) | 无序列表项标记样式
-list_style: 0  # value: 0 - 12 可选
+list_style: 12  # value: 0 - 12 可选
 
 # 左边栏宽度 px
-left_col_width: 320
+left_col_width: 332
 
 # Copyright info. of post | 文末版权信息
 copyright: true
@@ -161,7 +161,7 @@ copyright: true
 toc:
   on: true
   list_number: true # 目录序号
-  max_depth: 3  # 1 - 6 (h1-h6) 目录最大级数
+  max_depth: 6  # 1 - 6 (h1-h6) 目录最大级数
   nowrap: false # Keep title on same line | 目录标题不换行
 
 # 是否开启主页及加载头像时的动画效果
