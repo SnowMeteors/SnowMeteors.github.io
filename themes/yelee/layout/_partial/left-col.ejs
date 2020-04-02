@@ -9,7 +9,32 @@
         </hgroup>
 
         <% if (theme.subtitle){ %>
-        <p class="header-subtitle"><%=theme.subtitle%></p>
+            <!--   原个性签名    -->
+        <!-- <p class="header-subtitle"><%=theme.subtitle%></p>-->
+
+        <!--   现换成一言    -->
+            <div style="margin: 0 auto;text-align: left;font-size: medium;color: #444;">
+                <span id="hitokoto">获取中...</span>
+                <p style="text-align: right">
+                    <span>——</span>
+                    <span id="from"></span>
+                </p>
+            </div>
+
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&length=12');
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
+                        var hitokoto = document.getElementById('hitokoto');
+                        var fromm=document.getElementById("from")
+                        fromm.innerText=data.from;
+                        hitokoto.innerText = data.hitokoto;
+                    }
+                }
+                xhr.send();
+            </script>
         <%}%>
 
         <% if (theme.search.on){ %>
@@ -112,5 +137,32 @@
                 <%}%>
             </div>
         </div>
+
+        <!-- 底部一言 -->
+        <!--<p id="hitokoto">获取中...</p>-->
+        <!--<div style="border: 1px solid black;margin: 0 auto;text-align: left;font-size: medium">
+            <span id="hitokoto">获取中...</span>
+            <p style="text-align: right">
+                <span>——</span>
+                <span id="from"></span>
+            </p>
+        </div>
+
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', 'https://v1.hitokoto.cn/?c=b');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
+                    var hitokoto = document.getElementById('hitokoto');
+                    var fromm=document.getElementById("from")
+                    fromm.innerText=data.from;
+                    hitokoto.innerText = data.hitokoto;
+                }
+            }
+            xhr.send();
+        </script>-->
+        <!-- 一言 -->
+
     </header>                
 </div>

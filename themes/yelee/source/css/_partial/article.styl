@@ -1,6 +1,4 @@
-body,ul,ol{
-  list-style none
-}
+
 .body-wrap{
   margin-bottom: 126px;
   overflow: hidden;
@@ -398,7 +396,7 @@ li:hover {
   background: none;
   font-size: .9em;
   font-weight: bold;
-  color: lightgray;
+  color: rgba(0,0,0,0.6); // Hide 颜色
   cursor: pointer
   font-family: inherit;
   outline: none; /*Remove button border when clicked.*/
@@ -423,9 +421,9 @@ li:hover {
   font-size: .9rem;
   line-height: 1.65em;
   a {
-    color: gray;
-    &:visited {
-      color: rgba(244, 131, 133, 1);
+    color: rgba(0,0,0,0.7);  //修改目录颜色
+    &:visited {   //修改目录已访问颜色
+      color: rgba(0,0,0,0.7);
     }
     &:hover {
       color: #88acdb;
@@ -435,12 +433,13 @@ li:hover {
   li:hover {
     background: none;
     li:hover {
-      background: rgba(158, 188, 226, .21);
+      // li还要hover 后就有两个hover了不好看
+      //background: rgba(158, 188, 226, .21);
     }
   }
   .toc-title {
     font-weight: bold;
-    color: gray;
+    color: rgba(0, 0, 0, 0.6);  //修改content颜色
   }
   .toc {
     padding: .7em;
@@ -502,4 +501,7 @@ if hexo-config("toc_nowrap")
       cursor: pointer;
     }
   }
+}
+body,ul,ol{
+  list-style: none;
 }

@@ -340,6 +340,3 @@ categories:
 <center><font color="#666666">Thanks♪(･ω･)ﾉ for reading</font></center>
 
 
-
-
-
