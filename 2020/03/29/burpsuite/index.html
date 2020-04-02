@@ -106,7 +106,7 @@
 <meta property="og:image" content="http://snowmeteors.github.io/2020/03/29/burpsuite/CompareResult.png">
 <meta property="og:image" content="http://snowmeteors.github.io/2020/03/29/burpsuite/Alert.png">
 <meta property="article:published_time" content="2020-03-29T04:30:02.000Z">
-<meta property="article:modified_time" content="2020-04-01T13:38:06.885Z">
+<meta property="article:modified_time" content="2020-04-02T03:56:27.145Z">
 <meta property="article:author" content="麦当">
 <meta property="article:tag" content="burpsuite">
 <meta name="twitter:card" content="summary">
@@ -191,7 +191,32 @@
         </hgroup>
 
         
-        <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>
+            <!--   原个性签名    -->
+        <!-- <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>-->
+
+        <!--   现换成一言    -->
+            <div style="margin: 0 auto;text-align: left;font-size: medium;color: #444;">
+                <span id="hitokoto">获取中...</span>
+                <p style="text-align: right">
+                    <span>——</span>
+                    <span id="from"></span>
+                </p>
+            </div>
+
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&length=12');
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
+                        var hitokoto = document.getElementById('hitokoto');
+                        var fromm=document.getElementById("from")
+                        fromm.innerText=data.from;
+                        hitokoto.innerText = data.hitokoto;
+                    }
+                }
+                xhr.send();
+            </script>
         
 
         
@@ -243,6 +268,33 @@
                 
             </div>
         </div>
+
+        <!-- 底部一言 -->
+        <!--<p id="hitokoto">获取中...</p>-->
+        <!--<div style="border: 1px solid black;margin: 0 auto;text-align: left;font-size: medium">
+            <span id="hitokoto">获取中...</span>
+            <p style="text-align: right">
+                <span>——</span>
+                <span id="from"></span>
+            </p>
+        </div>
+
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', 'https://v1.hitokoto.cn/?c=b');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
+                    var hitokoto = document.getElementById('hitokoto');
+                    var fromm=document.getElementById("from")
+                    fromm.innerText=data.from;
+                    hitokoto.innerText = data.hitokoto;
+                }
+            }
+            xhr.send();
+        </script>-->
+        <!-- 一言 -->
+
     </header>                
 </div>
     </div>
@@ -465,9 +517,6 @@
 
 
 
-
-
-
       
     </div>
     
@@ -478,7 +527,7 @@
         <p><span>Title:</span><a href="/2020/03/29/burpsuite/">burpsuite</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">麦当</a></p>
         <p><span>Created:</span>2020-03-29, 12:30:02</p>
-        <p><span>Updated:</span>2020-04-01, 21:38:06</p>
+        <p><span>Updated:</span>2020-04-02, 11:56:27</p>
         <p>
             <span>Full URL:</span><a class="post-url" href="/2020/03/29/burpsuite/" title="burpsuite">http://snowmeteors.github.io/2020/03/29/burpsuite/</a>
             <span class="copy-path" data-clipboard-text="From http://snowmeteors.github.io/2020/03/29/burpsuite/　　By 麦当" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
@@ -508,7 +557,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-number">2.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Proxy"><span class="toc-number">3.</span> <span class="toc-text">Proxy</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题描述"><span class="toc-number">3.1.</span> <span class="toc-text">问题描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#问题解决"><span class="toc-number">3.2.</span> <span class="toc-text">问题解决</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#options"><span class="toc-number">3.3.</span> <span class="toc-text">options</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#导出项目"><span class="toc-number">4.</span> <span class="toc-text">导出项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#导入项目"><span class="toc-number">5.</span> <span class="toc-text">导入项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Target"><span class="toc-number">6.</span> <span class="toc-text">Target</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#site-map"><span class="toc-number">6.1.</span> <span class="toc-text">site map</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scope"><span class="toc-number">6.2.</span> <span class="toc-text">scope</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#site-map-filter"><span class="toc-number">6.3.</span> <span class="toc-text">site map filter</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spider"><span class="toc-number">7.</span> <span class="toc-text">Spider</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#control"><span class="toc-number">7.1.</span> <span class="toc-text">control</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#options-1"><span class="toc-number">7.2.</span> <span class="toc-text">options</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Scanner"><span class="toc-number">8.</span> <span class="toc-text">Scanner</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scan-queue"><span class="toc-number">8.1.</span> <span class="toc-text">Scan queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Issue-activity"><span class="toc-number">8.2.</span> <span class="toc-text">Issue activity</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#options-2"><span class="toc-number">8.3.</span> <span class="toc-text">options</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Attack-Insertion-Points"><span class="toc-number">8.3.1.</span> <span class="toc-text">Attack Insertion Points</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Active-Scanning-Engine"><span class="toc-number">8.3.2.</span> <span class="toc-text">Active Scanning Engine</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Active-Scanning-Optimization"><span class="toc-number">8.3.3.</span> <span class="toc-text">Active Scanning Optimization</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Intruder"><span class="toc-number">9.</span> <span class="toc-text">Intruder</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#positions"><span class="toc-number">9.1.</span> <span class="toc-text">positions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#payloads"><span class="toc-number">9.2.</span> <span class="toc-text">payloads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sniper-狙击手"><span class="toc-number">9.3.</span> <span class="toc-text">Sniper(狙击手)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Battering-ram-攻城槌"><span class="toc-number">9.4.</span> <span class="toc-text">Battering ram(攻城槌)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Pitchfork-杈子"><span class="toc-number">9.5.</span> <span class="toc-text">Pitchfork(杈子)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cluster-bomb-集束炸弹"><span class="toc-number">9.6.</span> <span class="toc-text">Cluster bomb(集束炸弹)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Filter"><span class="toc-number">9.7.</span> <span class="toc-text">Filter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#实战演示"><span class="toc-number">9.8.</span> <span class="toc-text">实战演示</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#列子1"><span class="toc-number">9.8.1.</span> <span class="toc-text">列子1</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#列子2"><span class="toc-number">9.8.2.</span> <span class="toc-text">列子2</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Repeater"><span class="toc-number">9.8.3.</span> <span class="toc-text">Repeater</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sequencer"><span class="toc-number">10.</span> <span class="toc-text">Sequencer</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#测试DVWA的session"><span class="toc-number">10.0.1.</span> <span class="toc-text">测试DVWA的session</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#清除cookie"><span class="toc-number">10.0.2.</span> <span class="toc-text">清除cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#删除站点"><span class="toc-number">10.0.3.</span> <span class="toc-text">删除站点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#抓取set-cookie请求包"><span class="toc-number">10.0.4.</span> <span class="toc-text">抓取set-cookie请求包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#选择测试的cookie"><span class="toc-number">10.0.5.</span> <span class="toc-text">选择测试的cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#查看分析结果"><span class="toc-number">10.0.6.</span> <span class="toc-text">查看分析结果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Decoder"><span class="toc-number">11.</span> <span class="toc-text">Decoder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Comparer"><span class="toc-number">12.</span> <span class="toc-text">Comparer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Alerts"><span class="toc-number">13.</span> <span class="toc-text">Alerts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extender"><span class="toc-number">14.</span> <span class="toc-text">Extender</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">15.</span> <span class="toc-text">总结</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Proxy"><span class="toc-text">Proxy</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题描述"><span class="toc-text">问题描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#问题解决"><span class="toc-text">问题解决</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#options"><span class="toc-text">options</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#导出项目"><span class="toc-text">导出项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#导入项目"><span class="toc-text">导入项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Target"><span class="toc-text">Target</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#site-map"><span class="toc-text">site map</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scope"><span class="toc-text">scope</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#site-map-filter"><span class="toc-text">site map filter</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spider"><span class="toc-text">Spider</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#control"><span class="toc-text">control</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#options-1"><span class="toc-text">options</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Scanner"><span class="toc-text">Scanner</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scan-queue"><span class="toc-text">Scan queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Issue-activity"><span class="toc-text">Issue activity</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#options-2"><span class="toc-text">options</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Attack-Insertion-Points"><span class="toc-text">Attack Insertion Points</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Active-Scanning-Engine"><span class="toc-text">Active Scanning Engine</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Active-Scanning-Optimization"><span class="toc-text">Active Scanning Optimization</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Intruder"><span class="toc-text">Intruder</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#positions"><span class="toc-text">positions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#payloads"><span class="toc-text">payloads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sniper-狙击手"><span class="toc-text">Sniper(狙击手)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Battering-ram-攻城槌"><span class="toc-text">Battering ram(攻城槌)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Pitchfork-杈子"><span class="toc-text">Pitchfork(杈子)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cluster-bomb-集束炸弹"><span class="toc-text">Cluster bomb(集束炸弹)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Filter"><span class="toc-text">Filter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#实战演示"><span class="toc-text">实战演示</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#列子1"><span class="toc-text">列子1</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#列子2"><span class="toc-text">列子2</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Repeater"><span class="toc-text">Repeater</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sequencer"><span class="toc-text">Sequencer</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#测试DVWA的session"><span class="toc-text">测试DVWA的session</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#清除cookie"><span class="toc-text">清除cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#删除站点"><span class="toc-text">删除站点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#抓取set-cookie请求包"><span class="toc-text">抓取set-cookie请求包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#选择测试的cookie"><span class="toc-text">选择测试的cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#查看分析结果"><span class="toc-text">查看分析结果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Decoder"><span class="toc-text">Decoder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Comparer"><span class="toc-text">Comparer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Alerts"><span class="toc-text">Alerts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extender"><span class="toc-text">Extender</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol>
         
     </div>
     <style>

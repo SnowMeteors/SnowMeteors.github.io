@@ -232,7 +232,7 @@ a {
 }
 #container .left-col {
   background: rgba(255,255,255,0.4);
-  width: 332px;
+  width: 325px;
   position: fixed;
   opacity: 1;
   -webkit-transition: all 0.2s ease-in;
@@ -263,7 +263,7 @@ a {
   right: 0;
   min-height: 100%;
   background: rgba(255,255,255,0.3);
-  left: 332px;
+  left: 325px;
   width: auto;
 }
 @media screen and (max-width: 800px) {
@@ -694,7 +694,7 @@ a {
 }
 #header .header-menu li a {
   font-size: 0.875rem;
-  min-width: 332px;
+  min-width: 325px;
 }
 #header .switch-area {
   position: relative;
@@ -1055,7 +1055,7 @@ a {
 }
 .hide-labels {
   position: fixed;
-  left: 410px;
+  left: 403px;
   top: 30px;
   padding: 1px;
   border: none;
@@ -1075,7 +1075,7 @@ a {
   opacity: 1;
 }
 #post-nav-button {
-  left: 332px;
+  left: 325px;
   top: 61.8%;
 }
 #post-nav-button a {
@@ -1263,11 +1263,6 @@ color
 }
 .archives-wrap .archives {
   background: transparent;
-}
-body,
-ul,
-ol {
-  list-style: none;
 }
 .body-wrap {
   margin-bottom: 126px;
@@ -1686,12 +1681,12 @@ li:hover {
 #tocButton {
   position: fixed;
   border: none;
-  left: 252px;
+  left: 245px;
   top: 385px;
   background: none;
   font-size: 0.9em;
   font-weight: bold;
-  color: #d3d3d3;
+  color: rgba(0,0,0,0.6);
   cursor: pointer;
   font-family: inherit;
   outline: none; /*Remove button border when clicked.*/
@@ -1702,7 +1697,7 @@ li:hover {
 }
 .toc-article {
   position: fixed;
-  width: 262px;
+  width: 255px;
   top: 378px;
   bottom: 1em;
   left: 0;
@@ -1717,10 +1712,10 @@ li:hover {
   line-height: 1.65em;
 }
 #toc a {
-  color: #808080;
+  color: rgba(0,0,0,0.7);
 }
 #toc a:visited {
-  color: #f48385;
+  color: rgba(0,0,0,0.7);
 }
 #toc a:hover {
   color: #88acdb;
@@ -1729,12 +1724,9 @@ li:hover {
 #toc li:hover {
   background: none;
 }
-#toc li:hover li:hover {
-  background: rgba(158,188,226,0.21);
-}
 #toc .toc-title {
   font-weight: bold;
-  color: #808080;
+  color: rgba(0,0,0,0.6);
 }
 #toc .toc {
   padding: 0.7em;
@@ -1787,6 +1779,11 @@ li:hover {
 .copyright .copy-path:hover {
   color: #808080;
   cursor: pointer;
+}
+body,
+ul,
+ol {
+  list-style: none;
 }
 @-moz-keyframes cd-bounce-1 {
   0% {

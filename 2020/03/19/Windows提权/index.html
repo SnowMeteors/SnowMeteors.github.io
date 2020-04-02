@@ -122,7 +122,32 @@
         </hgroup>
 
         
-        <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>
+            <!--   原个性签名    -->
+        <!-- <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>-->
+
+        <!--   现换成一言    -->
+            <div style="margin: 0 auto;text-align: left;font-size: medium;color: #444;">
+                <span id="hitokoto">获取中...</span>
+                <p style="text-align: right">
+                    <span>——</span>
+                    <span id="from"></span>
+                </p>
+            </div>
+
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&length=12');
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
+                        var hitokoto = document.getElementById('hitokoto');
+                        var fromm=document.getElementById("from")
+                        fromm.innerText=data.from;
+                        hitokoto.innerText = data.hitokoto;
+                    }
+                }
+                xhr.send();
+            </script>
         
 
         
@@ -174,6 +199,33 @@
                 
             </div>
         </div>
+
+        <!-- 底部一言 -->
+        <!--<p id="hitokoto">获取中...</p>-->
+        <!--<div style="border: 1px solid black;margin: 0 auto;text-align: left;font-size: medium">
+            <span id="hitokoto">获取中...</span>
+            <p style="text-align: right">
+                <span>——</span>
+                <span id="from"></span>
+            </p>
+        </div>
+
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', 'https://v1.hitokoto.cn/?c=b');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
+                    var hitokoto = document.getElementById('hitokoto');
+                    var fromm=document.getElementById("from")
+                    fromm.innerText=data.from;
+                    hitokoto.innerText = data.hitokoto;
+                }
+            }
+            xhr.send();
+        </script>-->
+        <!-- 一言 -->
+
     </header>                
 </div>
     </div>
@@ -348,7 +400,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工具准备"><span class="toc-number">2.</span> <span class="toc-text">工具准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#whoami命令"><span class="toc-number">3.</span> <span class="toc-text">whoami命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#psexec提权"><span class="toc-number">4.</span> <span class="toc-text">psexec提权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pinjector注入进程提权"><span class="toc-number">5.</span> <span class="toc-text">pinjector注入进程提权</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工具准备"><span class="toc-text">工具准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#whoami命令"><span class="toc-text">whoami命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#psexec提权"><span class="toc-text">psexec提权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pinjector注入进程提权"><span class="toc-text">pinjector注入进程提权</span></a></li></ol>
         
     </div>
     <style>
