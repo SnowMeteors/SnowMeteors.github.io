@@ -2,10 +2,10 @@ const ap = new APlayer({
     container: document.getElementById('aplayer'),
 	order: 'random',
 	autoplay: true,
-	fixed: false,
+	fixed: true,
 	preload: 'auto',
 	//loop: '',
-	listMaxHeight: 125,
+	//listMaxHeight: 125,
     audio: [
       {
         name: "風の詩",
@@ -77,24 +77,24 @@ const ap = new APlayer({
 		name: "雪之梦",
 		artist: 'Bandari',
 		url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_332018&response=res&type=convert_url&',
-		cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001lKzGM0PpU2T.jpg?max_age=2592000',
+		cover: 'https://s1.ax1x.com/2020/04/18/JmF7jO.jpg',
 	  },
 	  {
 		name: "River Flows in You",
 		artist: 'Yiruma',
 		url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_26038728&response=res&type=convert_url&',
-		cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000003zD6X70C6Ti6.jpg?max_age=2592000',
+		cover: 'https://s1.ax1x.com/2020/04/18/JmFr90.jpg',
 	  },
 	  {
 		name: "Kiss The Rain",
 		artist: 'Yiruma',
 		url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_38887115&response=res&type=convert_url&',
-		cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000003zD6X70C6Ti6.jpg?max_age=2592000',
+		cover: 'https://s1.ax1x.com/2020/04/18/JmFr90.jpg',
 	  },
 	  {
 		 name: "战争之后",
 		 artist: '李进',
-		 url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_40077844&response=res&type=convert_url&',
+		 url: 'http://music.163.com/song/media/outer/url?id=502238621.mp3',
 		 cover: 'http://p2.music.126.net/OwXSMDHp_Tjb6nvX25DrIQ==/109951163438422364.jpg?param=130y130',
 	  },
 	  //音乐外链脑袋疼，不想注册七牛啊
@@ -114,13 +114,13 @@ const ap = new APlayer({
 		name: "The Rain",
 		artist: '久石让',
 		url: 'https://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_1109443&response=res&type=convert_url&',
-		cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001zzFtE3o5YUo.jpg?max_age=2592000',
+		cover: 'https://s1.ax1x.com/2020/04/18/JmFQAA.jpg',
 	  },
 	  {
 		name: "lit(var)",
 		artist: '牛尾宪辅',
 		url: 'https://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_69107850&response=res&type=convert_url&',
-		cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001I8RWv1GHXbJ.jpg?max_age=2592000',
+		cover: 'http://p1.music.126.net/ZXF3bBgvrGctmQKXvQx9CQ==/18782957137588160.jpg?param=177y177',
 	  },
 	  {
 		name: "光よ、ふたたび",
@@ -128,11 +128,11 @@ const ap = new APlayer({
 		url: 'https://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_28056355&response=res&type=convert_url&',
 		cover: 'http://img1.kuwo.cn/star/albumcover/300/32/37/1392874965.jpg',
 	  },
-	  /*{
+	  {
 		name: "健二",
 		artist: '松本晃彦',
 		url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4947723&response=res&type=convert_url&',
-		cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001KV63B40amxl.jpg?max_age=2592000'，
-	  }*/
+		cover: 'https://s1.ax1x.com/2020/04/18/JmAuFA.jpg',
+	  },
     ]
 });
