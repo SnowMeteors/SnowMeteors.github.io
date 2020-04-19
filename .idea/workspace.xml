@@ -10,20 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85d7e442-6b3f-44e6-a210-0f60d90d4589" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.deploy_git/2020/01/10/hexo博客备份/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.deploy_git/2020/01/10/hexo博客备份/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_posts/Windows提权.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Windows提权.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/获取酷我音乐真实外链.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/获取酷我音乐真实外链/success.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/获取酷我音乐真实外链/封面.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/burpsuite.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/burpsuite.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/about/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/left-col.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/left-col.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/main.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/main.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/source/dist/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/dist/music.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +40,13 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,6 +114,8 @@
       <workItem from="1586088129264" duration="416000" />
       <workItem from="1586505992908" duration="83000" />
       <workItem from="1587191932661" duration="5249000" />
+      <workItem from="1587216389310" duration="663000" />
+      <workItem from="1587269663280" duration="1447000" />
     </task>
     <servers />
   </component>

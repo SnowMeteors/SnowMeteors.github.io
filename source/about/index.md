@@ -4,7 +4,6 @@ date: 2020-01-06 19:29:42
 ---
 <p></p>
 <center><b>欢迎你查看此篇文章，此篇文章不讲本人，只讲故事，记录生活的点点滴滴，没错被骗进来了吧，O(∩_∩)O哈哈~</b></center>
-
 <link rel="stylesheet" href="/dist/APlayer.min.css">
 
 <div id="aplayer"></div>
@@ -23,11 +22,14 @@ date: 2020-01-06 19:29:42
 ###  2020-3-30
 　　终于终于，我的内存条回来了，厂家发了两条全新的内存条，寒假到现在一共用了2 月, 3 周, 1 天=82 天，主机事件落下帷幕。虽然过程很艰辛，不过结局是好的。全新的主板+全新的内存条，还行，就是耗时间，以后出问题，不以后这种事件绝对不会发生第二次。
 　　现在刀影小组的学习生活也步入正轨，大家学习性都很高，特别是梦想家，一天想方设法让我们入坑pwn，管他的我先把Kali视频看完在说。还有burpsuite博客我写到了3000字，我估计完整总结有5000字左右，md以后可能不会写这么长的博客了。
+　　
+
 ### 2020-2-13
 　　今天利用python写出了人生第一个图形化界面游戏------飞机大战，除了爆炸敌机爆炸效果没有实现外，我还是挺满意的，对python面向对象语法大致有了一个了解。确实很简洁就是三目运算符有点反人类。
-<video  preload="none" src="http://upos-sz-mirrorkodo.bilivideo.com/upgcxcode/03/36/180083603/180083603-1-208.mp4?e=ig8euxZM2rNcNbNM7WdVhwdlhbKBhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1587214789&gen=playurl&os=kodobv&oi=837395164&trid=c826cf175aba48e889f552d029fc1169T&platform=html5&upsig=4cad5fa60e40ed17b57ff8cd32e46fae&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=526724951&logo=80000000" 
-controls="controls"></video>
-
+<div style="width:100%;height:0px;position:relative;padding-bottom:56.327%;">
+	<iframe src="https://streamja.com/embed/On4pW" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;">
+	</iframe>
+</div>
 
 ### 2020-2-5
 　　昨天我的cpu和主板寄回来了，对方说是cpu坏了于是乎给我换了一套全新的cpu，好吧虽然我半信半疑，总觉得是主板的问题？。开机通电测试，妈耶还是dram灯报警，我百思不得其解，难道真的是我内存条坏了还是两根？我的fuck？？
@@ -35,16 +37,16 @@ controls="controls"></video>
 
 ### 2020-1-24
 　　大年三十这天，伴随着外面的烟花声和春晚结束曲《难忘今宵》2019年就这样过去了，2020年它来了。然而，春节最重要的事情是少出门，出门戴口罩，是对自己负责更是对他人负责的一种表现。
-　　2020愿望，学会爬虫，学好渗透，弹好《风之诗》就行啦\(^o^)/~，这些都不难吧，对吧上帝!![](滑稽.jpg)
+　　2020愿望，学会爬虫，学好渗透，弹好《风之诗》就行啦\(^o^)/~，这些都不难吧，对吧上帝!![](https://s1.ax1x.com/2020/04/18/Jn3awR.jpg)
 　　最后祝早日打赢这场战争，祝武汉人民早日渡过难关。
-<img src="2020-1-25.jpg"/>
+<img src="https://s1.ax1x.com/2020/04/18/Jn30Fx.jpg"/>
 
 
 ### 2020-1-8
 　　已考完试，收拾行李回家。拖着装着台式机的行李箱到了家，台式机打开，插上线，一切检查完毕，开机。(⊙o⊙)…，黑屏了，闻到一股烧焦的味道，马上断电，然后又检查了一遍，再次通电看见主板自检灯卡在了cpu，将cpu拆下重装后、cpu自检过了，又尼玛卡在了dram上虽然这是提示内存有问题，但绝对不可能是我内存的问题，我两条海盗船的内存不可能同时报废，于是单条内存每个通道都试了一遍后，还是黑屏。
 　　无果，第二天去了电脑铺，详细说明了情况后，得知在回来的路上因为我不知道cpu松动的情况下，就通电，导致cpu底下的插槽被烧毁。意思就是主板坏了，太棒了我这用了不到半年的主板就这样没了。联系售后等维修结果吧o(╥﹏╥)o，告知年后技术人员才上班，注定这是一个无聊的寒假ε=(´ο｀*)))
 
-<img src="cpu.jpg" />
+<img src="https://s1.ax1x.com/2020/04/18/Jn3dT1.jpg" />
 
 ## 某段回忆
 

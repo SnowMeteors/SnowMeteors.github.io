@@ -6,6 +6,8 @@ tags:
 categories:
 - 渗透测试
 ---
+
+<meta name="referrer" content="no-referrer" />
 ### 前言
 　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。
 <!-- more -->
@@ -47,7 +49,7 @@ categories:
 　　执行netstat -an查看端口开启是否成功
 　　![](https://i0.hdslb.com/bfs/album/fe0c8adf067044cd9cff7eacaa7622a17a8d4d1e.png)
 　　利用nc命令来连接，并查看提权是否成功
-　　![](https://i0.hdslb.com/bfs/album/632da9a79b46110a4610b3b519d94f3d62eafca1.png)
+　　<img src="https://i0.hdslb.com/bfs/album/632da9a79b46110a4610b3b519d94f3d62eafca1.png">
 　　可以看到提权已经成功了，这时在打开靶机的任务管理器，发现有一个cmd.exe，除此之外并没有多余的进程产生，利用注入进程的方式隐蔽性极高，很难发现
 　　![](https://i0.hdslb.com/bfs/album/13c1581a977412cd23ac25d9f2bd80f955ec8132.png)
 　　打开Sysinternals中的procexp.exe，此工具是进程管理工具，查看当前有哪些可疑的进程

@@ -141,4 +141,10 @@ backup:
 aplayer:
   meting: true
 
+#图片懒加载
+#lazyload:
+#  enable: true
+#  onlypost: false
+#  loadingImg: # eg /images/loading.gif
+
 
