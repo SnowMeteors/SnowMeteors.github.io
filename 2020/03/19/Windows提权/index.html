@@ -16,12 +16,12 @@
 
 
 
-<meta name="description" content="### 前言 　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。">
+<meta name="description" content="前言　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows提权">
 <meta property="og:url" content="http://snowmeteors.github.io/2020/03/19/Windows%E6%8F%90%E6%9D%83/index.html">
 <meta property="og:site_name" content="Lion">
-<meta property="og:description" content="### 前言 　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。">
+<meta property="og:description" content="前言　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i0.hdslb.com/bfs/album/7d8be4d3bdfe76ce632439cf4a8cc36f933bb6df.png">
 <meta property="og:image" content="https://i0.hdslb.com/bfs/album/cf30cdaecdfe15a98f4adef1451925acb63a82c1.png">
@@ -37,7 +37,7 @@
 <meta property="og:image" content="https://i0.hdslb.com/bfs/album/13c1581a977412cd23ac25d9f2bd80f955ec8132.png">
 <meta property="og:image" content="https://i0.hdslb.com/bfs/album/4b599dd8670a013928a928128bac06482fca3f92.png">
 <meta property="article:published_time" content="2020-03-19T04:57:32.000Z">
-<meta property="article:modified_time" content="2020-04-19T06:25:16.228Z">
+<meta property="article:modified_time" content="2020-04-19T06:56:00.819Z">
 <meta property="article:author" content="麦当">
 <meta property="article:tag" content="windows提权">
 <meta name="twitter:card" content="summary">
@@ -346,8 +346,9 @@
       
           
         <meta name="referrer" content="no-referrer">
-### 前言
-　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。
+
+
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。</p>
 <a id="more"></a>
 
 <h3 id="工具准备"><a href="#工具准备" class="headerlink" title="工具准备"></a>工具准备</h3><p>　　<a href="https://download.sysinternals.com/files/SysinternalsSuite.zip" target="_blank" rel="noopener">Sysinternals</a><br>　　<a href="https://www.tarasco.org/security/Process_Injector/index.html" target="_blank" rel="noopener">Pinjector</a></p>
@@ -366,7 +367,7 @@
         <p><span>Title:</span><a href="/2020/03/19/Windows%E6%8F%90%E6%9D%83/">Windows提权</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">麦当</a></p>
         <p><span>Created:</span>2020-03-19, 12:57:32</p>
-        <p><span>Updated:</span>2020-04-19, 14:25:16</p>
+        <p><span>Updated:</span>2020-04-19, 14:56:00</p>
         <p>
             <span>Full URL:</span><a class="post-url" href="/2020/03/19/Windows%E6%8F%90%E6%9D%83/" title="Windows提权">http://snowmeteors.github.io/2020/03/19/Windows%E6%8F%90%E6%9D%83/</a>
             <span class="copy-path" data-clipboard-text="From http://snowmeteors.github.io/2020/03/19/Windows%E6%8F%90%E6%9D%83/　　By 麦当" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
@@ -402,7 +403,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#工具准备"><span class="toc-text">工具准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#whoami命令"><span class="toc-text">whoami命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#psexec提权"><span class="toc-text">psexec提权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pinjector注入进程提权"><span class="toc-text">pinjector注入进程提权</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工具准备"><span class="toc-text">工具准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#whoami命令"><span class="toc-text">whoami命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#psexec提权"><span class="toc-text">psexec提权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pinjector注入进程提权"><span class="toc-text">pinjector注入进程提权</span></a></li></ol>
         
     </div>
     <style>
