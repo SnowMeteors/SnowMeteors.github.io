@@ -278,7 +278,7 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
           <div class="article-meta">
-              <a href="/2020/03/29/burpsuite/" class="archive-article-date">
+              <a href="/2020/03/29/abbrlink.html" class="archive-article-date">
       <time datetime="2020-03-29T04:30:02.000Z" itemprop="datePublished">03-29</time>
 </a>
 
@@ -287,7 +287,7 @@
          
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/29/burpsuite/">burpsuite</a>
+      <a class="archive-article-title" href="/2020/03/29/abbrlink.html">burpsuite</a>
     </h1>
   
 
@@ -321,53 +321,69 @@
     <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
+                <i class="fa fa-copyright"></i>
+                
                 2020 麦当
             </div>
             <div class="footer-right">
-                 我的青春回忆录
+                我的青春回忆录
             </div>
         </div>
         
             <div class="visit">
                 
                     <span style='display:inline'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user"
+                                                                                         aria-hidden="true"></i><span
+                                    id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
- 
- 
+
                 
                     <span>| </span>
                 
-  
- 
+
                 
                     <span style='display:inline'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye" aria-hidden="true"></i><span id="busuanzi_value_site_pv"></span>
+                        <span id="page-visit" title="Page Hits"><i class="fa fa-eye"
+                                                                                         aria-hidden="true"></i><span
+                                    id="busuanzi_value_site_pv"></span>
                         </span>
                     </span>
                 
-				<br/>
-				<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-				<script>
-					var now = new Date(); 
-					function createtime() { 
-						var grt= new Date("1/1/2020 00:00:00");//此处修改你的建站时间或者网站上线时间 
-						now.setTime(now.getTime()+250); 
-						days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-						hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-						if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-						mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-						seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-						snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-						document.getElementById("timeDate").innerHTML = "我在这里 "+dnum+" 天 "; 
-						document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
-					} 
-				setInterval("createtime()",250);
-				</script>
-                
+                <br/>
+                <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                <script>
+                    var now = new Date();
+
+                    function createtime() {
+                        var grt = new Date("1/1/2020 00:00:00");//此处修改你的建站时间或者网站上线时间
+                        now.setTime(now.getTime() + 250);
+                        days = (now - grt) / 1000 / 60 / 60 / 24;
+                        dnum = Math.floor(days);
+                        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+                        hnum = Math.floor(hours);
+                        if (String(hnum).length == 1) {
+                            hnum = "0" + hnum;
+                        }
+                        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+                        mnum = Math.floor(minutes);
+                        if (String(mnum).length == 1) {
+                            mnum = "0" + mnum;
+                        }
+                        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                        snum = Math.round(seconds);
+                        if (String(snum).length == 1) {
+                            snum = "0" + snum;
+                        }
+                        document.getElementById("timeDate").innerHTML = "我在这里 " + dnum + " 天 ";
+                        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+                    }
+
+                    setInterval("createtime()", 250);
+                </script>
+
             </div>
 
         
@@ -376,7 +392,6 @@
 
 </footer>
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 
 
     </div>
@@ -392,8 +407,15 @@
                 $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
             }
             else {
-                var backgroundnum = 7;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                //自定义背景图片甩到路过图床
+                var ImgUrl = ["https://s1.ax1x.com/2020/04/20/JQPYX6.jpg","https://s1.ax1x.com/2020/04/20/JQPJ6x.jpg",
+                              "https://s1.ax1x.com/2020/04/20/JQPG11.jpg","https://s1.ax1x.com/2020/04/20/JQP8pR.jpg",
+                              "https://s1.ax1x.com/2020/04/20/JQP1h9.jpg","https://s1.ax1x.com/2020/04/20/JQPltJ.jpg",
+                              "https://s1.ax1x.com/2020/04/20/JQpR74.jpg"];
+
+                //如果想单一背景图片更好img就行
+                var img = ImgUrl[Math.floor((Math.random()*ImgUrl.length))];
+                var backgroundimg = "url(" + img + ")";//.replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
                 $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
             }
         })
