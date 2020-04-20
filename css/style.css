@@ -790,7 +790,7 @@ a {
   transform: scale(1.1);
 }
 #header .header-nav .social .GitHub {
-  background: url("https://s1.ax1x.com/2020/04/20/JQ30pt.png") center no-repeat;
+  background: url("https://s1.ax1x.com/2020/04/20/JQWKqU.png") center no-repeat;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   background-size: 100%;
@@ -1286,6 +1286,38 @@ color
   line-height: 1.65em;
   padding: 0 2em;
   font-size: 1rem;
+}
+.article-entry #notFound {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 80%;
+  height: auto;
+}
+.article-entry #yun {
+  height: 320px;
+  width: 100%;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .article-entry #yun {
+    height: 300px;
+  }
+  .article-entry #notFound {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .article-entry #yun {
+    height: 200px;
+  }
+  .article-entry #notFound {
+    width: 120%;
+  }
 }
 .article-entry blockquote {
   padding: 0.4em 20px;
@@ -1962,14 +1994,14 @@ ol {
 }
 .article-entry pre,
 .article-entry .highlight {
-  background: rgba(249,249,249,0.5);
+  background: rgba(32,34,37,0.85);
   margin: auto;
   padding: 0.35em 1.5em;
   border-style: solid;
   border-color: #ddd;
   border-width: 1px;
   overflow: auto;
-  color: #4d4d4c;
+  color: #c5c8c6;
   line-height: 1.3rem;
 }
 .article-entry .highlight .gutter pre,
@@ -1986,7 +2018,7 @@ ol {
   text-shadow: none;
   padding: 0;
   background: none;
-  color: #4d4d4c;
+  color: #c5c8c6;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -2015,7 +2047,7 @@ ol {
 }
 .article-entry .highlight figcaption {
   font-size: 0.85em;
-  color: #8e908c;
+  color: #969896;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -2042,7 +2074,7 @@ ol {
   border-style: solid;
   border-color: #ddd;
   border-width: 1px 0;
-  background: rgba(249,249,249,0.5);
+  background: rgba(32,34,37,0.85);
   padding: 15px 20px 15px 0;
 }
 .article-entry .gist .gist-file {
@@ -2068,8 +2100,8 @@ ol {
   border: none;
 }
 .article-entry .gist .gist-file .gist-meta {
-  background: rgba(249,249,249,0.5);
-  color: #8e908c;
+  background: rgba(32,34,37,0.85);
+  color: #969896;
   font: 0.85em "Lucida Grande", Verdana, "Helvetica Neue", Arial;
   text-shadow: 0 0;
   padding: 0;
@@ -2090,10 +2122,14 @@ ol {
   border-radius: 3px;
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.08);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.08);
+  var: 8;
+  color: #fff;
+  background: rgba(153,204,153,0.7);
+  background: rgba(91,192,222,0.6);
 }
 pre .comment,
 pre .title {
-  color: #8e908c;
+  color: #969896;
 }
 pre .variable,
 pre .attribute,
@@ -2107,7 +2143,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #c66;
 }
 pre .number,
 pre .preprocessor,
@@ -2115,12 +2151,12 @@ pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: #f5871f;
+  color: #de935f;
 }
 pre .class,
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: #f893ad;
+  color: #b5bd68;
 }
 pre .string,
 pre .value,
@@ -2128,10 +2164,10 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #f893ad;
+  color: #b5bd68;
 }
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #8abeb7;
 }
 pre .function,
 pre .python .decorator,
@@ -2141,11 +2177,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #81a2be;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #8959a8;
+  color: #b294bb;
 }
 #footer {
   font-size: 0.8rem;
