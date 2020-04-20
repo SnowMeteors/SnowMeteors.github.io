@@ -135,10 +135,10 @@ const ap = new APlayer({
 		cover: 'https://s1.ax1x.com/2020/04/18/JmAuFA.jpg',
 	  },
 	 {
-			name: "测试",
-			artist: '测试',
-			url: 'https://upos-sz-mirrorkodo.bilivideo.com/ugaxcode/i180404sy2i39ycjkmrmsc3gg9n80u0f-192k.m4a?deadline=1587227157&gen=uga&os=kodobv&uparams=deadline,gen,os&upsig=f38539f6404c448a6d8f8a355fa563dd',
-			cover: '',
+		name: "时代を超える想い",
+		artist: '和田薫',
+		url: 'http://music.163.com/song/media/outer/url?id=541131.mp3',
+		cover: 'https://s1.ax1x.com/2020/04/20/J1h1vn.jpg',
 	 },
     ]
 });

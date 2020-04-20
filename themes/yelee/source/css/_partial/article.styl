@@ -124,7 +124,7 @@
   padding: 15px 8.2em 15px 25px;
   &:hover {
     border-left: 5px solid #9c9;
-  };
+  }
 }
 .article-info {
   li:hover {
@@ -167,12 +167,12 @@
     border-bottom: 1px solid #ddd;
     &:hover {
       color:#88acdb;
-    };
+    }
 text-align: center;
 &::before, &::after {
   content:" —— ";
   font-family: Arial;
-};
+}
 }
 h3 {
   margin: .5em auto;
@@ -194,7 +194,7 @@ h4,h5,h6{
   border-bottom: 1px solid #ddd;
   &:hover {
     color:#88acdb;
-  };
+  }
 }
 video{
   max-width: 100%;
@@ -264,7 +264,37 @@ figure{
     }
   }
 }
+  #notFound {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 80%;
+    height: auto;
+  }
+  #yun {
+    height: 500px;
+    width: 100%;
+    position: relative;
+  }
+  @media only screen and (max-width: 768px) {
+    #yun {
+      height: 360px;
+    }
+    #notFound {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    #yun {
+      height: 200px;
+    }
+    #notFound {
+      width: 100%;
+    }
+  }
 }
+
 
 .article-meta{
   position: absolute;
