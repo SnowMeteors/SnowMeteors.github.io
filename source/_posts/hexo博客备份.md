@@ -1,10 +1,11 @@
 ---
 title: hexo博客备份
-date: 2020-01-10 10:06:36
 categories:
-- hexo
+  - hexo
 tags:
-- hexo
+  - hexo
+abbrlink: 38686
+date: 2020-01-10 10:06:36
 ---
 
 ### 前言

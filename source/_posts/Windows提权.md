@@ -1,13 +1,16 @@
 ---
 title: Windows提权
-date: 2020-03-19 12:57:32
 tags:
-- windows提权
+  - windows提权
 categories:
-- 渗透测试
+  - 渗透测试
+abbrlink: 57748
+date: 2020-03-19 12:57:32
 ---
 
 <meta name="referrer" content="no-referrer" />
+
+
 ### 前言
 　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。
 <!-- more -->

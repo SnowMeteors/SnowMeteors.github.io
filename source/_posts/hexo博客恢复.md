@@ -1,8 +1,9 @@
 ---
 title: hexo博客恢复
-date: 2020-01-13 10:06:36
 categories:
-- hexo
+  - hexo
+abbrlink: 35585
+date: 2020-01-13 10:06:36
 ---
 
 标题的意思是指如何在其他电脑继续使用hexo写博客，前提是你备份了你的hexo文件，注意当你配置好了hexo环境后，勿用hexo init命令。

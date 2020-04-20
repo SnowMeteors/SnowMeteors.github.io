@@ -8,8 +8,15 @@
                 $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
             }
             else {
-                var backgroundnum = <%= theme.background_image %>;
-                var backgroundimg = "url(<%- theme.root_url %>/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                //自定义背景图片甩到路过图床
+                var ImgUrl = ["https://s1.ax1x.com/2020/04/20/JQPYX6.jpg","https://s1.ax1x.com/2020/04/20/JQPJ6x.jpg",
+                              "https://s1.ax1x.com/2020/04/20/JQPG11.jpg","https://s1.ax1x.com/2020/04/20/JQP8pR.jpg",
+                              "https://s1.ax1x.com/2020/04/20/JQP1h9.jpg","https://s1.ax1x.com/2020/04/20/JQPltJ.jpg",
+                              "https://s1.ax1x.com/2020/04/20/JQpR74.jpg"];
+
+                //如果想单一背景图片更好img就行
+                var img = ImgUrl[Math.floor((Math.random()*ImgUrl.length))];
+                var backgroundimg = "url(<%- theme.root_url %>" + img + ")";//.replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
                 $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
             }
         })

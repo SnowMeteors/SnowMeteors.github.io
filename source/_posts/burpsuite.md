@@ -1,10 +1,11 @@
 ---
 title: burpsuite
-date: 2020-03-29 12:30:02
 tags:
-- burpsuite
+  - burpsuite
 categories:
-- 渗透测试
+  - 渗透测试
+abbrlink: 48647
+date: 2020-03-29 12:30:02
 ---
 
 ### 前言
