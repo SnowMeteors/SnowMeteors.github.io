@@ -194,7 +194,7 @@
             <!--   原个性签名    -->
         <!-- <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>-->
 
-            <div style="margin: 0 auto;text-align: left;font-size: medium;color: #444;">
+            <div style="margin: 0 auto;text-align: left;font-size: 16px;color: #444;font-family: 宋体;font-weight: bold;">
                 <span id="hitokoto">获取中...</span>
                 <p style="text-align: right">
                     <span>——</span>
@@ -204,7 +204,7 @@
 
             <script>
                 var xhr = new XMLHttpRequest();
-                xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&length=12');
+                xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&c=d&length=12');
                 xhr.onreadystatechange = function () {
                     if (xhr.readyState === 4) {
                         var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
@@ -221,6 +221,39 @@
         
 
 
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                        <li>个性签名</li>
+                        
+                    </ul>
+                </div>
+            </div>
         
 
         <div id="switch-area" class="switch-area">
@@ -254,6 +287,12 @@
                     </nav>
                 </section>
                 
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DVWA/" rel="tag">DVWA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/KuWo/" rel="tag">KuWo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/burpsuite/" rel="tag">burpsuite</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows%E6%8F%90%E6%9D%83/" rel="tag">windows提权</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9F%B3%E4%B9%90%E5%A4%96%E9%93%BE/" rel="tag">音乐外链</a></li></ul>
+                    </div>
+                </section>
                 
                 
                 
@@ -346,7 +385,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
+    <link class="menu-list" tags="标签" friends="友情链接" about="个性签名"/>
 </nav>
       <div class="body-wrap">
         <article id="post-burpsuite" class="article article-type-post" itemscope itemprop="blogPost">
@@ -523,23 +562,29 @@
   
     
     <div class="copyright">
-        <p><span>Title:</span><a href="/2020/03/29/48647.html">burpsuite</a></p>
-        <p><span>Author:</span><a href="/" title="Back to Homepage">麦当</a></p>
-        <p><span>Created:</span>2020-03-29, 12:30:02</p>
-        <p><span>Updated:</span>2020-04-20, 10:53:14</p>
+        <p><span>本文标题:</span><a href="/2020/03/29/48647.html">burpsuite</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">麦当</a></p>
+        <p><span>发布时间:</span>2020-03-29, 12:30:02</p>
+        <p><span>最后更新:</span>2020-04-20, 10:53:14</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2020/03/29/48647.html" title="burpsuite">http://snowmeteors.github.io/2020/03/29/48647.html</a>
+            <span>原始链接:</span><a class="post-url" href="/2020/03/29/48647.html" title="burpsuite">http://snowmeteors.github.io/2020/03/29/48647.html</a>
             <span class="copy-path" data-clipboard-text="From http://snowmeteors.github.io/2020/03/29/48647.html　　By 麦当" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
 
 
     <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2020/04/21/57354.html">
+                    DVWA
+                </a>
+            </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
@@ -554,7 +599,7 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
+        <strong class="toc-title">文章目录</strong>
         
             <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Proxy"><span class="toc-text">Proxy</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题描述"><span class="toc-text">问题描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#问题解决"><span class="toc-text">问题解决</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#options"><span class="toc-text">options</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#导出项目"><span class="toc-text">导出项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#导入项目"><span class="toc-text">导入项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Target"><span class="toc-text">Target</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#site-map"><span class="toc-text">site map</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scope"><span class="toc-text">scope</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#site-map-filter"><span class="toc-text">site map filter</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spider"><span class="toc-text">Spider</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#control"><span class="toc-text">control</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#options-1"><span class="toc-text">options</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Scanner"><span class="toc-text">Scanner</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scan-queue"><span class="toc-text">Scan queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Issue-activity"><span class="toc-text">Issue activity</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#options-2"><span class="toc-text">options</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Attack-Insertion-Points"><span class="toc-text">Attack Insertion Points</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Active-Scanning-Engine"><span class="toc-text">Active Scanning Engine</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Active-Scanning-Optimization"><span class="toc-text">Active Scanning Optimization</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Intruder"><span class="toc-text">Intruder</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#positions"><span class="toc-text">positions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#payloads"><span class="toc-text">payloads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sniper-狙击手"><span class="toc-text">Sniper(狙击手)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Battering-ram-攻城槌"><span class="toc-text">Battering ram(攻城槌)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Pitchfork-杈子"><span class="toc-text">Pitchfork(杈子)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cluster-bomb-集束炸弹"><span class="toc-text">Cluster bomb(集束炸弹)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Filter"><span class="toc-text">Filter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#实战演示"><span class="toc-text">实战演示</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#列子1"><span class="toc-text">列子1</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#列子2"><span class="toc-text">列子2</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Repeater"><span class="toc-text">Repeater</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sequencer"><span class="toc-text">Sequencer</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#测试DVWA的session"><span class="toc-text">测试DVWA的session</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#清除cookie"><span class="toc-text">清除cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#删除站点"><span class="toc-text">删除站点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#抓取set-cookie请求包"><span class="toc-text">抓取set-cookie请求包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#选择测试的cookie"><span class="toc-text">选择测试的cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#查看分析结果"><span class="toc-text">查看分析结果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Decoder"><span class="toc-text">Decoder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Comparer"><span class="toc-text">Comparer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Alerts"><span class="toc-text">Alerts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extender"><span class="toc-text">Extender</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol>
         
@@ -570,10 +615,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
     <script>
-        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
     </script>
 
 
@@ -612,19 +657,21 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+            <a href="/2020/04/21/57354.html" title="Pre: DVWA">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
-        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2020/03/19/57748.html" title="Next: Windows提权">
+            <a href="/2020/03/19/57748.html" title="下一篇: Windows提权">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/03/29/48647.html">burpsuite</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/19/57748.html">Windows提权</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/13/28534.html">获取酷我音乐，网易云真实外链</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/13/35585.html">hexo博客恢复</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/10/38686.html">hexo博客备份</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/04/21/57354.html">DVWA</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/29/48647.html">burpsuite</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/19/57748.html">Windows提权</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/13/28534.html">获取酷我音乐，网易云真实外链</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/13/35585.html">hexo博客恢复</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/10/38686.html">hexo博客备份</a></li></ul>
 
 
 
@@ -743,9 +790,9 @@
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
     <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
@@ -758,7 +805,7 @@
             
             
              archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
+            
             
              friends: "#js-friends a", 
              socail: ".social a" 
