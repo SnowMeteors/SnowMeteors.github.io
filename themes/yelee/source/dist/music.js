@@ -137,8 +137,32 @@ const ap = new APlayer({
 	 {
 		name: "时代を超える想い",
 		artist: '和田薫',
-		url: 'http://music.163.com/song/media/outer/url?id=541131.mp3',
+		url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_6533431&response=res&type=convert_url&',
 		cover: 'https://s1.ax1x.com/2020/04/20/J1h1vn.jpg',
 	 },
+	{
+		name: "Cornfield Chase",
+		artist: 'Hans Zimmer',
+		url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_28412452&response=res&type=convert_url&',
+		cover: 'https://s1.ax1x.com/2020/04/21/J8kouj.jpg',
+	},
+	{
+		name: "沉醉于风中",
+		artist: 'S.E.N.S.',
+		url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_20530038&response=res&type=convert_url&',
+		cover: 'https://s1.ax1x.com/2020/04/22/JY7dXT.jpg',
+	},
+	{
+		name: "我的家园",
+		artist: '游戏原声',
+		url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_7067851&response=res&type=convert_url&',
+		cover: 'https://s1.ax1x.com/2020/04/22/JUAIOK.jpg',
+	},
+	{
+		name: "神之将至",
+		artist: '王朝',
+		url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_6572570&response=res&type=convert_url&',
+		cover: 'https://s1.ax1x.com/2020/04/22/JUEEpn.jpg',
+	},
     ]
 });

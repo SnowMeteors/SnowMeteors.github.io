@@ -43,7 +43,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -151,7 +151,7 @@ pretty_urls:
 #图片懒加载
 #lazyload:
 #  enable: true
-#  onlypost: false
+#  onlypost: true
 #  loadingImg: # eg /images/loading.gif
 
 

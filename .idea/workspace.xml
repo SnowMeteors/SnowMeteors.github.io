@@ -11,15 +11,16 @@
   <component name="ChangeListManager">
     <list default="true" id="85d7e442-6b3f-44e6-a210-0f60d90d4589" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/about/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/post/tag.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/post/tag.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/post/word.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/post/word.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/languages/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/languages/en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/left-col.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/left-col.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/open-in-new-tab.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/open-in-new-tab.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/article.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/article.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/customise/social-icon.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/customise/social-icon.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/tagcloud.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/tagcloud.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/source/dist/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/dist/music.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +127,12 @@
       <workItem from="1587376775311" duration="1884000" />
       <workItem from="1587381113956" duration="4716000" />
       <workItem from="1587390565339" duration="227000" />
+      <workItem from="1587393087714" duration="589000" />
+      <workItem from="1587440758645" duration="7777000" />
+      <workItem from="1587471876449" duration="691000" />
+      <workItem from="1587522151327" duration="619000" />
+      <workItem from="1587560395869" duration="922000" />
+      <workItem from="1587726487767" duration="1515000" />
     </task>
     <servers />
   </component>
@@ -145,9 +152,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="295" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586506074184" />
-    <state x="522" y="380" width="917" height="600" key="find.popup" timestamp="1587389503355">
+    <state x="321" y="254" width="917" height="600" key="find.popup" timestamp="1587448129997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="522" y="380" width="917" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587389503355" />
+    <state x="321" y="254" width="917" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587448129997" />
   </component>
 </project>
