@@ -383,9 +383,13 @@
           
         <p>标题的意思是指如何在其他电脑继续使用hexo写博客，前提是你备份了你的hexo文件，注意当你配置好了hexo环境后，勿用hexo init命令。</p>
 <a id="more"></a>
+
 <h3 id="拷贝以下文件到博客根目录下"><a href="#拷贝以下文件到博客根目录下" class="headerlink" title="拷贝以下文件到博客根目录下"></a>拷贝以下文件到博客根目录下</h3><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="module-access"><span class="module"><span class="identifier">_config</span>.</span></span>yml</span><br><span class="line"> package.json</span><br><span class="line"> scaffolds/</span><br><span class="line"> source/</span><br><span class="line"> themes/</span><br></pre></td></tr></table></figure>
+
 <h3 id="执行模块安装的命令"><a href="#执行模块安装的命令" class="headerlink" title="执行模块安装的命令"></a>执行模块安装的命令</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> -g hexo</span><br><span class="line">npm <span class="keyword">install</span></span><br><span class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br><span class="line">npm <span class="keyword">install</span> hexo-generator-feed <span class="comment">--save</span></span><br><span class="line">npm <span class="keyword">install</span> hexo-generator-sitemap <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h3><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">hexo</span> <span class="string">g</span></span><br><span class="line"><span class="attr">hexo</span> <span class="string">deploy</span></span><br></pre></td></tr></table></figure>
+
 <p>提醒一下，当你在其他电脑执行hexo d命令时，远程仓库的commits将会全部清空。</p>
 
       
