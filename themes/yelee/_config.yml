@@ -184,11 +184,10 @@ limit_article_width:
 tagcloud: true
 
 # Blogroll, Link exchange | 友情链接
-#friends:
-#  Hexo: https://hexo.io
-#  GitHub: https://pages.github.com/
-#  MOxFIVE: http://moxfive.xyz/
-friends: false
+friends:
+  小琲的天尘翼: https://www.tianchenyi.com/
+
+
 
 #是否开启“关于我”。
 aboutme: 每一刻都是崭新的
@@ -200,7 +199,7 @@ aboutme: 每一刻都是崭新的
 open_in_new:
   global: 0 # 0-2
   title: false # article title in homepage 主页文章标题
-  post: false # link within post/page 正文中的链接
+  post: true # link within post/page 正文中的链接
   tags: false # 标签
   categories: false # 分类
   article_nav: false # 导航

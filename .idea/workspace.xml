@@ -16,11 +16,7 @@
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/about/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/languages/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/languages/en.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/left-col.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/left-col.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/open-in-new-tab.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/open-in-new-tab.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/article.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/article.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/dist/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/dist/music.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Study/Code Project/C/Clion Test" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Sakura" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -133,6 +129,15 @@
       <workItem from="1587522151327" duration="619000" />
       <workItem from="1587560395869" duration="922000" />
       <workItem from="1587726487767" duration="1515000" />
+      <workItem from="1588041920860" duration="302000" />
+      <workItem from="1588048798672" duration="306000" />
+      <workItem from="1588127254035" duration="28000" />
+      <workItem from="1588140731587" duration="2536000" />
+      <workItem from="1588143561406" duration="111000" />
+      <workItem from="1588250192339" duration="620000" />
+      <workItem from="1588989928333" duration="118000" />
+      <workItem from="1589208376085" duration="35000" />
+      <workItem from="1590718592646" duration="17000" />
     </task>
     <servers />
   </component>
@@ -148,13 +153,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="965" y="491" width="943" height="346" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585462036746" />
-    <state x="732" y="295" key="FileChooserDialogImpl" timestamp="1586506074184">
+    <state x="732" y="295" key="FileChooserDialogImpl" timestamp="1588990033058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="732" y="295" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586506074184" />
-    <state x="321" y="254" width="917" height="600" key="find.popup" timestamp="1587448129997">
+    <state x="732" y="295" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588990033058" />
+    <state x="321" y="254" width="917" height="600" key="find.popup" timestamp="1588049092882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="321" y="254" width="917" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587448129997" />
+    <state x="321" y="254" width="917" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588049092882" />
   </component>
 </project>
