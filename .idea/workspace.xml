@@ -11,12 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="85d7e442-6b3f-44e6-a210-0f60d90d4589" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/about/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yelee/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/src/value.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +135,8 @@
       <workItem from="1588989928333" duration="118000" />
       <workItem from="1589208376085" duration="35000" />
       <workItem from="1590718592646" duration="17000" />
+      <workItem from="1593141576463" duration="732000" />
+      <workItem from="1594970660805" duration="566000" />
     </task>
     <servers />
   </component>
@@ -157,9 +156,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="295" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588990033058" />
-    <state x="321" y="254" width="917" height="600" key="find.popup" timestamp="1588049092882">
+    <state x="321" y="254" width="917" height="600" key="find.popup" timestamp="1593141599859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="321" y="254" width="917" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588049092882" />
+    <state x="321" y="254" width="917" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593141599859" />
   </component>
 </project>
