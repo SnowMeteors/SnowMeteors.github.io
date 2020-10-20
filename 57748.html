@@ -19,7 +19,7 @@
 <meta name="description" content="前言　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows提权">
-<meta property="og:url" content="http://snowmeteors.github.io/2020/03/19/57748.html">
+<meta property="og:url" content="http://maidang.cool/57748.html">
 <meta property="og:site_name" content="Lion">
 <meta property="og:description" content="前言　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。">
 <meta property="og:locale" content="en_US">
@@ -239,8 +239,6 @@
                     
                       <a class="main-nav-link switch-friends-link" href="https://www.tianchenyi.com/" target="_blank" rel="noopener">小琲的天尘翼</a>
                     
-                      <a class="main-nav-link switch-friends-link" href="http://www.ponder233.cn/" target="_blank" rel="noopener">adehrt</a>
-                    
                     </div>
                 </section>
                 
@@ -339,7 +337,7 @@
         <article id="post-Windows提权" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2020/03/19/57748.html" class="article-date">
+      <a href="/57748.html" class="article-date">
       <time datetime="2020-03-19T04:57:32.000Z" itemprop="datePublished">2020-03-19</time>
 </a>
 
@@ -402,10 +400,12 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <meta name="referrer" content="no-referrer">
+        <meta name="referrer" content="no-referrer" />
 
 
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。<br><a id="more"></a></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>　　本章主要是讲关于win10下的提权合集，温馨提示cmd请以管理员身份运行，不然会出现权限不够等问题。第一次写渗透测试实验报告，如有错误，请多包涵。</p>
+<a id="more"></a>
+
 <h3 id="工具准备"><a href="#工具准备" class="headerlink" title="工具准备"></a>工具准备</h3><p>　　<a href="https://download.sysinternals.com/files/SysinternalsSuite.zip" target="_blank" rel="noopener">Sysinternals</a><br>　　<a href="https://www.tarasco.org/security/Process_Injector/index.html" target="_blank" rel="noopener">Pinjector</a></p>
 <h3 id="whoami命令"><a href="#whoami命令" class="headerlink" title="whoami命令"></a>whoami命令</h3><p>　　利用whoami查看当前计算机登陆的用户和组<br>　　<img src="https://i0.hdslb.com/bfs/album/7d8be4d3bdfe76ce632439cf4a8cc36f933bb6df.png"><br>　　可以看出当前是在desktop-3vs7u23\lion组中</p>
 <h3 id="psexec提权"><a href="#psexec提权" class="headerlink" title="psexec提权"></a>psexec提权</h3><p>　　将Sysinternals中的psexec.exe拷贝到C:\Windows\System32下后<br>　　输入PsExec.exe -i -s cmd命令<br>　　-i 命令是运行程序，使其与远程系统上指定会话的桌面进行交互<br>　　-s 在系统帐户中运行该服务进程<br>　　<img src="https://i0.hdslb.com/bfs/album/cf30cdaecdfe15a98f4adef1451925acb63a82c1.png"><br>　　这时会弹出一个新的cmd框，在新的cmd框中再次输入whoami命令<br>　　<img src="https://i0.hdslb.com/bfs/album/183a1b3ea3bfcc16aaa1f3313ffd44492eb1130e.png"><br>　　发现用户组已经变成了nt authority\system<br>　　此时试试打开一个notepad，查看登陆用户<br>　　<img src="https://i0.hdslb.com/bfs/album/b60b09d039ff08fadd14d13608bedaa5925cca15.png"><br>　　可以看见登陆用户是system，即在此cmd框中创建的用户都是system</p>
@@ -418,13 +418,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2020/03/19/57748.html">Windows提权</a></p>
+        <p><span>本文标题:</span><a href="/57748.html">Windows提权</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">麦当</a></p>
         <p><span>发布时间:</span>2020-03-19, 12:57:32</p>
         <p><span>最后更新:</span>2020-03-19, 12:57:32</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2020/03/19/57748.html" title="Windows提权">http://snowmeteors.github.io/2020/03/19/57748.html</a>
-            <span class="copy-path" data-clipboard-text="From http://snowmeteors.github.io/2020/03/19/57748.html　　By 麦当" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/57748.html" title="Windows提权">http://maidang.cool/57748.html</a>
+            <span class="copy-path" data-clipboard-text="From http://maidang.cool/57748.html　　By 麦当" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -437,14 +437,14 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2020/03/29/48647.html">
+                <a href="/48647.html">
                     burpsuite
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2020/01/13/28534.html">
+                <a href="/28534.html">
                     获取酷我音乐，网易云真实外链
                 </a>
             </div>
@@ -513,7 +513,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2020/03/29/48647.html" title="Pre: burpsuite">
+            <a href="/48647.html" title="Pre: burpsuite">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -521,13 +521,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2020/01/13/28534.html" title="下一篇: 获取酷我音乐，网易云真实外链">
+            <a href="/28534.html" title="下一篇: 获取酷我音乐，网易云真实外链">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/07/17/34786.html">数据结构之链表篇</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/04/21/57354.html">DVWA</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/29/48647.html">burpsuite</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/19/57748.html">Windows提权</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/13/28534.html">获取酷我音乐，网易云真实外链</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/13/35585.html">hexo博客恢复</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/10/38686.html">hexo博客备份</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/45983.html">一次授权渗透实战</a></li><li class="post-list-item"><a class="post-list-link" href="/34786.html">数据结构之链表篇</a></li><li class="post-list-item"><a class="post-list-link" href="/57354.html">DVWA</a></li><li class="post-list-item"><a class="post-list-link" href="/48647.html">burpsuite</a></li><li class="post-list-item"><a class="post-list-link" href="/57748.html">Windows提权</a></li><li class="post-list-item"><a class="post-list-link" href="/28534.html">获取酷我音乐，网易云真实外链</a></li><li class="post-list-item"><a class="post-list-link" href="/35585.html">hexo博客恢复</a></li><li class="post-list-item"><a class="post-list-link" href="/38686.html">hexo博客备份</a></li></ul>
 
 
 
@@ -631,9 +631,10 @@
                               "https://s1.ax1x.com/2020/04/20/JQpR74.jpg"];
 
                 //如果想单一背景图片更好img就行
-                var img = ImgUrl[Math.floor((Math.random()*ImgUrl.length))];
+                // var img = ImgUrl[Math.floor((Math.random()*ImgUrl.length))];
+                var img = "https://s1.ax1x.com/2020/04/20/JQpR74.jpg";
                 var backgroundimg = "url(" + img + ")";//.replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover","background-position":"center center"});
             }
         })
     </script>

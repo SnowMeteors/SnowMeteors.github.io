@@ -19,7 +19,7 @@
 <meta name="description" content="!function(){for(var o&#x3D;0,t&#x3D;[&quot;ms&quot;,&quot;moz&quot;,&quot;webkit&quot;,&quot;o&quot;],i&#x3D;0;it?-1:1},randomInt:function(t,i){return i+&#x3D;1,Math.floor(Math.random()*(i-t)+t)},randomBool:function(t){return t&#x3D;t||.5,Math.random()">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lion">
-<meta property="og:url" content="http://snowmeteors.github.io/404.html">
+<meta property="og:url" content="http://maidang.cool/404.html">
 <meta property="og:site_name" content="Lion">
 <meta property="og:description" content="!function(){for(var o&#x3D;0,t&#x3D;[&quot;ms&quot;,&quot;moz&quot;,&quot;webkit&quot;,&quot;o&quot;],i&#x3D;0;it?-1:1},randomInt:function(t,i){return i+&#x3D;1,Math.floor(Math.random()*(i-t)+t)},randomBool:function(t){return t&#x3D;t||.5,Math.random()">
 <meta property="og:locale" content="en_US">
@@ -223,8 +223,6 @@
                     <div id="js-friends">
                     
                       <a class="main-nav-link switch-friends-link" href="https://www.tianchenyi.com/" target="_blank" rel="noopener">小琲的天尘翼</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="http://www.ponder233.cn/" target="_blank" rel="noopener">adehrt</a>
                     
                     </div>
                 </section>
@@ -509,9 +507,10 @@
                               "https://s1.ax1x.com/2020/04/20/JQpR74.jpg"];
 
                 //如果想单一背景图片更好img就行
-                var img = ImgUrl[Math.floor((Math.random()*ImgUrl.length))];
+                // var img = ImgUrl[Math.floor((Math.random()*ImgUrl.length))];
+                var img = "https://s1.ax1x.com/2020/04/20/JQpR74.jpg";
                 var backgroundimg = "url(" + img + ")";//.replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover","background-position":"center center"});
             }
         })
     </script>
