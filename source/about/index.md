@@ -4,12 +4,33 @@ date: 2020-01-06 19:29:42
 ---
 
 <center>让音乐陪伴着你我(づ￣3￣)づ╭❤～，慢慢欣赏吧</center>
+
 ## 关于此篇
 
 　　"谨以此书，纪念我的童年，那是一段小有遗憾的时光"　　　　　　　　　　
 <div style="text-align:right">——《查理九世》</div>
 
 ## 新的篇章
+
+### 2020-10-12
+　　第一次实战拿下对方的shell，很不幸的是写实战文章的时候，对方已经更改了安全规则，并把原来的网站资源删除，重新发布了一份新的。
+　　这次实战给我带来最大的收获
+　　第一，后渗透阶段第一步一定要做好<a href="https://bbs.ichunqiu.com/thread-58843-1-1.html">权限维持</a>，我因没做好这一步，导致对方发现马后，全部重新部署网站+调整安全规则，导致我直接丢失控制权。
+　　第二，永久后门植入并且一定要警惕对方发现，马子名一定要与系统自带名一样，起到混淆作用
+　　第三，为了防止过后在写渗透文章，而对方已经更改安全策略，而导致复现失败的情况下。一定要在实战的过程中录视频，或者边实战边截图，给后面写文章提供资料。
+　　总的来说，此次我希望只是我渗透测试的开端，希望后面越来越好吧，加油
+　　<img src="https://s1.ax1x.com/2020/10/17/0OEfk6.jpg" >
+　　<img src="https://s1.ax1x.com/2020/10/17/0OEq0I.png">
+
+### 2020-10-5
+　　这商家太良心了，好吧我承认，我不仅白嫖，别人还倒给我钱，少见少见哈哈
+　　<img src="https://s1.ax1x.com/2020/10/17/0OEVQH.jpg">
+　　<img src="https://s1.ax1x.com/2020/10/17/0OEuwt.png" width="50%">
+
+### 2020-9-3
+　　早上一看野蛮就这样暴毙了，后来想想极大可能是我晚上多次打扰，强光照射次数太多而导致的。图四是唯一的大工(也许算吧)，是真的好看。即使蚁后走了，工蚁们也照样不离不弃。而我真正想说的是，在地球中，如果还有另一个也称得上"文明"的话，蚂蚁当之无愧。
+<img src="https://s1.ax1x.com/2020/09/22/wOzl34.jpg" width="50%"><img src="https://s1.ax1x.com/2020/09/22/wOz1gJ.jpg" width="50%">
+<img src="https://s1.ax1x.com/2020/09/22/wOz3v9.jpg" width="50%"><img src="https://s1.ax1x.com/2020/09/22/wOzQCF.jpg" width="50%">
 
 ### 2020-7-6
 　　苑老师的这套质量非常高的渗透测试视频看完了，也了结我的一个心愿吧，从2019年左右就得到了此视频的资源，说到高考完后看，直到现在才咕咕咕咕的看完。视频的最后，还是苑老师那熟悉的结束语，“谢谢大家”，礼貌而又谦卑，让我心中还有点小小的不舍。最后，感谢苑老师的这套安全视频，完结撒花！
@@ -44,8 +65,7 @@ date: 2020-01-06 19:29:42
 ### 2020-2-13
 　　今天利用python写出了人生第一个图形化界面游戏------飞机大战，除了爆炸敌机爆炸效果没有实现外，我还是挺满意的，对python面向对象语法大致有了一个了解。确实很简洁就是三目运算符有点反人类。
 <a href="https://xbeibeix.com/api/bilibili/biliplayer/?url=BV1P54y1R7Fp">视频如果无法播放请移步这里</a>
-<div style="width:100%;height:0px;position:relative;padding-bottom:56.327%;">
-	<iframe src="https://streamja.com/embed/On4pW" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;">浏览器不支持播放
+<div style="width:100%;position:relative;padding-bottom:56.327%;"><iframe src="https://streamja.com/embed/On4pW" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;">浏览器不支持播放
 	</iframe>
 </div>
 
@@ -73,7 +93,7 @@ date: 2020-01-06 19:29:42
 ## 某段回忆
 
 　<center><span style="color:white;background-color:#bacce6">开启时光机，记录下往事</span></center>
-　　写过一些日记，关于初中时的有趣事情，一年仅写一篇。然而我急于分享我的日记，带到学校去分享后，大家笑了我也笑了，到了第二天放在我书包里的日记不翼而飞了，就这样我的初中回忆就这样到了不知某人的手里，我失去了只写了两页的本子(可能TA还以为我写了很多吧)和那段完整而有趣的回忆。所以好的东西给真正懂你的人去分享吧，是那么的美好与青涩。(待续----)
+　　写过几次日记，都是关于初中时的有趣事情，一年仅写一篇。某天将日记带到学校去分享后，大家笑了我也笑了，到了第二天放在我书包里的日记不翼而飞了，就这样我的初中回忆就这样到了不知某人的手里，我失去了只写了两页的本子(可能TA还以为我写了很多吧)和那段完整而有趣的回忆。所以好的东西给真正懂你的人去分享吧，是那么的美好与青涩。
 
 
 <link rel="stylesheet" href="/dist/APlayer.min.css">

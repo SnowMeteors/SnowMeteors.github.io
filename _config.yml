@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://snowmeteors.github.io
+url: http://maidang.cool
 root: /
 
 
@@ -137,7 +137,7 @@ backup:
 aplayer:
   meting: true
 
-permalink: :year/:month/:day/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
+permalink: /:abbrlink.html  # 此处可以自己设置，也可以直接使用 /:abbrlink.html
 abbrlink:
   alg: crc16   #算法： crc16(default) and crc32
   rep: dec     #进制： dec(default) and hex

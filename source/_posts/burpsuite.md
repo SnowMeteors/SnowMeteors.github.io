@@ -20,19 +20,19 @@ date: 2020-03-29 12:30:02
 　　物理机无法抓靶机流量包，Kali能抓靶机流量包，但告知你必须要用物理机去抓到靶机流量包，怎样办？
 #### 问题解决
 　　在Proxy->Options->Proxy Listeners->Add 添加代理侦听
-　　![](https://s1.ax1x.com/2020/04/19/JuwGFg.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/JuwGFg.png">
 　　设置绑定端口：随便设置 我设置为8080，设置绑定地址：我设置的是全网卡，直接ok选择yes后退出
-　　![](https://s1.ax1x.com/2020/04/18/JnJmOe.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJmOe.png">
 　　不抓本地包，所以去掉第一个选项卡
 　　配置靶机中浏览器代理为物理机中的ip，端口为刚才设置的8080
-　　![](https://s1.ax1x.com/2020/04/19/Ju8dL4.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/Ju8dL4.png">
 　　抓包成功,当然强大的burp也能抓手机包,本篇不介绍
-　　![](https://s1.ax1x.com/2020/04/19/Ju8uQS.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/Ju8uQS.png">
 
 #### options
 　　只介绍Response Modification功能
 　　设置用于执行自动响应的修改。可以使用这些选项通过自动重写应用程序响应的HTML来完成各种任务。 下列选项在数据删除客户端控件可能是有用的
-　　![](https://s1.ax1x.com/2020/04/18/JnJR0J.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJR0J.png">
 　　有些网页中是把表单隐藏了的
 　　Unhide hidden form fields:显示隐藏的表单
 　　　　Prominently highlight unhidden fields:高亮显示这些字段
@@ -45,17 +45,17 @@ date: 2020-03-29 12:30:02
 　　这个具体实际作用在哪里我也不知道
 　　Remove secure flag from cookies:从cookies中删除安全标志
 　　secure flag如图所示
-　　![](https://s1.ax1x.com/2020/04/19/Juw2lR.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/Juw2lR.png">
 ### 导出项目
 　　最上面的选项卡Burp->Save copy of projec
-　　![](https://s1.ax1x.com/2020/04/19/JuwR61.png)
-　　![](https://s1.ax1x.com/2020/04/18/JnJW79.png)
-　　![](https://s1.ax1x.com/2020/04/18/JnJhkR.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/JuwR61.png">
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJW79.png">
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJhkR.png">
 　　再下一步就是选择保存位置和文件名称，点击保存就完成了
 
 ### 导入项目
 　　写的够详细了，就不介绍了
-　　![](https://s1.ax1x.com/2020/04/19/Ju8heH.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/Ju8heH.png">
 
 ### Target
 ####  site map
@@ -63,7 +63,7 @@ date: 2020-03-29 12:30:02
 　　站点又分为两类:黑色和灰色
 　　黑色:浏览器真正的对一个url发起了请求,服务器对它返回了响应信息
 　　灰色:从页面中的url爬网爬出来的,并没有对该url的资源发生真正的访问一次。
-![](https://s1.ax1x.com/2020/04/18/JnJ9eJ.png)
+<img src="https://s1.ax1x.com/2020/04/18/JnJ9eJ.png">
 
 | 内容区域 | 信息描述 |
 | :------: | :------: |
@@ -75,22 +75,22 @@ date: 2020-03-29 12:30:02
 
 #### scope
 　　查看当前站点过滤信息，当你想只查看某一个站点信息或者某个目录的时候，如下图所示选择要显示的站点，发送到scope去。
-　　![](https://s1.ax1x.com/2020/04/19/Juw3TS.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/Juw3TS.png">
 　　Include in scope:只查看当前列表中的站点信息=白名单
 　　Exclude from scope:排除掉列表中的站点信息=黑名单
-　　![](https://s1.ax1x.com/2020/04/18/JnJawj.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJawj.png">
 
 #### site map filter
 　　单击filter哪一栏,会弹出过滤器规则,当你勾选好过滤规则后,只需要点击其他空白处,就会自动开始过滤
-　　![](https://s1.ax1x.com/2020/04/18/JnJueH.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJueH.png">
 　　Show only in-scope items:仅显示范围内的站点(此处需搭配scope使用) 勾选后入图所示
-　　![](https://s1.ax1x.com/2020/04/18/JnJtOg.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJtOg.png">
 　　Show only requested items:仅显示真正发起请求的站点
 　　Show only parameterizend requests:仅显示参数化的请求 也就是 过滤掉html,htm这类站点
 　　Filter by search term:按关键词筛选 比如我只看url地址中包含了dvwa关键字
-　　![](https://s1.ax1x.com/2020/04/19/Juwx78.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/Juwx78.png">
 　　结果入图所示
-　　![](https://s1.ax1x.com/2020/04/19/Juwv0f.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/Juwv0f.png">
 　　Filter by MIME type:按文件类型筛选
 　　Filter by status code:按状态码筛选
 　　Filter by file extension:按文件扩展名筛选 
@@ -99,23 +99,23 @@ date: 2020-03-29 12:30:02
 　　Filter by annotation:
 　　　　Show only commented items:仅显示注释的项目
 　　　　给url添加注释
-　　　　![](https://s1.ax1x.com/2020/04/19/JuwJYQ.png)
+　　　　<img src="https://s1.ax1x.com/2020/04/19/JuwJYQ.png">
 　　　　添加完注释后
-　　　　![](https://s1.ax1x.com/2020/04/19/Juw40K.png)
+　　　　<img src="https://s1.ax1x.com/2020/04/19/Juw40K.png">
 　　　　Show only highlighted items:仅显示高亮的项目
 　　　　点击host进行高亮设置
-　　　　![](https://s1.ax1x.com/2020/04/19/Ju8WOe.png)
+　　　　<img src="https://s1.ax1x.com/2020/04/19/Ju8WOe.png">
 　　当你选乱的情况下,在Filter下面show all;hide all那一栏点击Revert changes:还原更改
 
 ### Spider
 　　它提供爬虫功能，帮助来爬取网站目录结构
 　　右键选择要爬取的主机或者分支发送到spider，它就会自动开始爬取网站
-　　![](https://s1.ax1x.com/2020/04/18/JnJCw9.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJCw9.png">
 　　如果遇到需要验证的表单，burp会自动弹出，知道就填上，提交选Submit form，忽略选Ignore form
-　　![](https://s1.ax1x.com/2020/04/18/JnJPoR.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJPoR.png">
 #### control
 　　在Spider->Control可以看见爬取的状态
-　　![](https://s1.ax1x.com/2020/04/18/JnJ3fP.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJ3fP.png">
 　　Requests made:已经发送的请求
 　　Bytes transferred:传输字节
 　　Requests queued:请求的队列数量
@@ -125,7 +125,7 @@ date: 2020-03-29 12:30:02
 #### options
 　　Spider->Options->Application Login 到申请登陆功能这里查看
 　　默认选择Prompt for guidance即需要身份验证的时候就提示
-　　![](https://s1.ax1x.com/2020/04/18/JnJFF1.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJFF1.png">
 　　Don't submit login forms:不要进行表单提交身份验证
 　　Handle as ordinary forms:普通形式处理
 　　Automatically submit these credentials:自动提交这些凭据 勾选后 它将自动将username和password里面的数据提交进表单
@@ -133,19 +133,19 @@ date: 2020-03-29 12:30:02
 ### Scanner
 　　在进行scanner(漏洞扫描)前，先使用spider功能，这样可以最大限度发现漏洞
 　　右键选择分支或者主机，选择主动扫描，没有搞懂被动扫描有什么用
-　　![](https://s1.ax1x.com/2020/04/19/JuwYWj.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/JuwYWj.png">
 　　这时会弹出主动扫描向导
-　　![](https://s1.ax1x.com/2020/04/19/JuwNSs.png)
+　　<img src="https://s1.ax1x.com/2020/04/19/JuwNSs.png">
 　　最后一个选项Remove items with the follwing extensions:以下扩展名的不扫描。没必要扫这些勾选上
 　　直接Next->Ok就开始进行扫描
 #### Scan queue
 　　此处查看扫描队列的详细进度
-　　![](https://s1.ax1x.com/2020/04/18/JnJ0kn.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJ0kn.png">
 　　Issues颜色级别
 　　High:红色	Medium:橙色	Low:黄色	Information:深灰色
 #### Issue activity
 　　此功能是查看具体安全报告信息
-　　![](https://s1.ax1x.com/2020/04/18/JnJ5fx.png)
+　　<img src="https://s1.ax1x.com/2020/04/18/JnJ5fx.png">
 　　上面一部分
 
 | Action | Issue type | Host | Path | Insertion point | Severtity | Confidence |
