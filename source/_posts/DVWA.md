@@ -15,7 +15,7 @@ date: 2020-04-21 17:23:53
 靶机使用的是Metasploitable2-Linux集成的dvwa环境，不同的dvwa版本，难度选项有些有4个最后一个选项是impossible，我的只有3个，即high=impossible。
 
 ### Brute Force
-　　爆破表单，主要看你的字典内容是否丰富，首先打开burp，抓包拦截后放进intruder模块。我写过burp使用教程，不懂的移步<a target="_blank" href="https://snowmeteors.github.io/2020/03/29/48647.html">burpsuite使用教程</a>，不多说了。
+　　爆破表单，主要看你的字典内容是否丰富，首先打开burp，抓包拦截后放进intruder模块。我写过burp使用教程，不懂的移步<a target="_blank" href="http://www.maidang.cool/2020/48647.html">burpsuite使用教程</a>，不多说了。
 　　low级别，设置好攻击变量，攻击类型Cluster bomb后，开始设置payloads。
 　　<img src="https://s1.ax1x.com/2020/04/21/JGmedH.png">
 　　因为知道用户名和密码，为了不浪费时间，我就随便添加几个，如图所示。
@@ -24,6 +24,7 @@ date: 2020-04-21 17:23:53
 　　<img src="https://s1.ax1x.com/2020/04/24/JDDop6.png">
 　　medium级别，还是跟上面一模一样的配置，开始攻击后，情况跟low级别的代码一模一样，我一度以为我是不是没有调整级别。
 　　high级别下，每次发包会延迟2s，但是只要你有耐心，也能爆破出来不是吗。
+
 ### Command Execution
 　　执行模块，low级别下。首先可以看到输入一个ip地址，那么先输入一个正确的ip地址127.0.0.1试试
 　　<img src="https://s1.ax1x.com/2020/04/21/JGM89s.png">

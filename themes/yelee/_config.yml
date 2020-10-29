@@ -130,14 +130,16 @@ base_font_size: 17  #px, 16 - 24
 ## 可用值 Value: yilia
 color_scheme: 
 
-highlight_style:
-  on: true
-  inline_code: 7  # Value: 0 - 9 可选
-  code_block: 0  # Value: 0 - 4
-  # Set inline_code to style highlight text
-  # Chose a highlight theme for code block
-  # 通过 inline_code 切换内置文本高亮样式
-  # 通过 code_block 切换内置代码高亮配色主题
+#highlight_style:
+#  on: true
+#  inline_code: 7  # Value: 0 - 9 可选
+#  code_block: 0  # Value: 0 - 4
+#  # Set inline_code to style highlight text
+#  # Chose a highlight theme for code block
+#  # 通过 inline_code 切换内置文本高亮样式
+#  # 通过 code_block 切换内置代码高亮配色主题
+
+
 
 blockquote_style:
 #  on: true
@@ -299,7 +301,6 @@ CDN:
   jquery_ui_js: //cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js
   jquery_ui_css: //cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css
   pace_js: //cdn.bootcss.com/pace/1.0.2/pace.min.js
-  clipboard: //cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js
   mathjax: //cdn.bootcss.com/mathjax/2.6.1/MathJax.js
   scrollreveal: //cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js
  

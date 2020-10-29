@@ -52,7 +52,7 @@ npm install hexo-git-backup@0.0.91 --save
 
 Hexo版本是3.x.x使用,我的虽然是4.2.0使用下面命令亲测有效
 
-```
+```bash
 npm install hexo-git-backup --save
 ```
 

@@ -37,16 +37,24 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
-highlight:
+#highlight:
+#  enable: false
+#  line_number: true
+#  auto_detect: true
+#  tab_replace: ''
+#  wrap: true
+#  hljs: false
+prismjs:
   enable: true
+  preprocess: true
   line_number: true
-  auto_detect: true
   tab_replace: ''
-  wrap: true
-  hljs: false
+
+
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -73,7 +81,8 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+#use_date_for_updated: false
+updated_option: date
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -137,7 +146,7 @@ backup:
 aplayer:
   meting: true
 
-permalink: /:abbrlink.html  # 此处可以自己设置，也可以直接使用 /:abbrlink.html
+permalink: :year/:abbrlink.html  # 此处可以自己设置，也可以直接使用 /:abbrlink.html
 abbrlink:
   alg: crc16   #算法： crc16(default) and crc32
   rep: dec     #进制： dec(default) and hex
@@ -148,8 +157,4 @@ pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
-#图片懒加载
-#lazyload:
-#  enable: true
-#  onlypost: true
-#  loadingImg: # eg /images/loading.gif
+
