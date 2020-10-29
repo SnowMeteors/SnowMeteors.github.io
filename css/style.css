@@ -2122,10 +2122,6 @@ ol {
   border-radius: 3px;
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.08);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.08);
-  var: 7;
-  color: #fff;
-  background: rgba(153,204,153,0.7);
-  background: rgba(129,138,145,0.35);
 }
 pre .comment,
 pre .title {

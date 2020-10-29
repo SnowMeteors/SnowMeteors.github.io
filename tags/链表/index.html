@@ -59,7 +59,7 @@
 <title>Tag: 链表 | Lion</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+<script src=""></script>
 
 <script>
     var yiliaConfig = {
@@ -88,7 +88,7 @@
 
 
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 5.2.0"></head>
 <body>
   <div id="container">
     <div class="left-col">
@@ -99,35 +99,9 @@
             <img src="https://s1.ax1x.com/2020/04/18/JmkHGq.jpg" class="animated zoomIn">
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/">麦当</a></h1>
+          <h1 class="header-author"><a href="/"></a></h1>
         </hgroup>
 
-        
-            <!--   原个性签名    -->
-        <!-- <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>-->
-
-            <div style="margin: 0 auto;text-align: left;font-size: 16px;color: #444;font-family: 宋体;font-weight: bold;">
-                <span id="hitokoto">获取中...</span>
-                <p style="text-align: right">
-                    <span>——</span>
-                    <span id="from"></span>
-                </p>
-            </div>
-
-            <script>
-                var xhr = new XMLHttpRequest();
-                xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&c=d&length=12');
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4) {
-                        var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
-                        var hitokoto = document.getElementById('hitokoto');
-                        var fromm=document.getElementById("from")
-                        fromm.innerText=data.from;
-                        hitokoto.innerText = data.hitokoto;
-                    }
-                }
-                xhr.send();
-            </script>
         
 
         
@@ -194,13 +168,13 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Github" href="https://github.com/SnowMeteors" target="_blank" rel="noopener" title="Github"></a>
+                                <a class="fa Github" target="_blank" rel="noopener" href="https://github.com/SnowMeteors" title="Github"></a>
                             
-                                <a class="fa 牛客网" href="https://www.nowcoder.com/profile/5746494" target="_blank" rel="noopener" title="牛客网"></a>
+                                <a class="fa 牛客网" target="_blank" rel="noopener" href="https://www.nowcoder.com/profile/5746494" title="牛客网"></a>
                             
-                                <a class="fa 秒速五厘米" href="https://music.163.com/#/album?id=49790" target="_blank" rel="noopener" title="秒速五厘米"></a>
+                                <a class="fa 秒速五厘米" target="_blank" rel="noopener" href="https://music.163.com/#/album?id=49790" title="秒速五厘米"></a>
                             
-                                <a class="fa bilibili" href="https://space.bilibili.com/381708330" target="_blank" rel="noopener" title="bilibili"></a>
+                                <a class="fa bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/381708330" title="bilibili"></a>
                             
                         </ul>
                     </nav>
@@ -218,7 +192,7 @@
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a class="main-nav-link switch-friends-link" href="https://www.tianchenyi.com/" target="_blank" rel="noopener">小琲的天尘翼</a>
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://www.tianchenyi.com/">小琲的天尘翼</a>
                     
                     </div>
                 </section>
@@ -270,7 +244,7 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">麦当</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页"></a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -278,10 +252,8 @@
                 <img src="https://s1.ax1x.com/2020/04/18/JmkHGq.jpg" class="animated zoomIn">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">麦当</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页"></a></h1>
             </hgroup>
-            
-            <p class="header-subtitle">人生若只如初见,何事秋风悲画扇</p>
             
             <nav class="header-menu">
                 <ul>
@@ -332,7 +304,7 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
           <div class="article-meta">
-              <a href="/34786.html" class="archive-article-date">
+              <a href="/2020/34786.html" class="archive-article-date">
       <time datetime="2020-07-17T07:15:24.000Z" itemprop="datePublished">07-17</time>
 </a>
 
@@ -341,7 +313,7 @@
          
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/34786.html">数据结构之链表篇</a>
+      <a class="archive-article-title" href="/2020/34786.html">数据结构之链表篇</a>
     </h1>
   
 
@@ -526,5 +498,9 @@
   <!--  实现点击出爱心-->
   <script type="text/javascript" src="/js/src/love.js"></script>
   <script type="text/javascript" src="/js/src/value.js"></script>
+  <!--  代码高亮 -->
+  <link type="text/css" rel="stylesheet" href="/css/prism.css">
+
+
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"hOffset":-15,"vOffset":-80,"position":"right","width":200},"mobile":{"show":false},"react":{"opacity":0.6},"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
 </html>
