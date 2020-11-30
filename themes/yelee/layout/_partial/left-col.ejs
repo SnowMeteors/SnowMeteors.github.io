@@ -1,39 +1,44 @@
 <div class="overlay"></div>
 <div class="intrude-less">
     <header id="header" class="inner">
+
         <a href="<%= config.root %>" class="profilepic">
             <img src="<%- theme.root_url %><%=theme.avatar%>" class="animated zoomIn">
         </a>
+
+      <!--  一言迁移 -->
+        <div style="margin: 0 auto;text-align: left;font-size: 16px;color: #444;font-weight: bold;position: relative;top: 10px;font-family: 宋体">
+            <span id="hitokoto">获取中...</span>
+            <p style="text-align: right;margin-top: 5px" >
+                <span>——</span>
+                <span id="from"></span>
+            </p>
+        </div>
+
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&c=d&max_length=32');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
+                    var hitokoto = document.getElementById('hitokoto');
+                    var fromm=document.getElementById("from")
+                    fromm.innerText=data.from;
+                    hitokoto.innerText = data.hitokoto;
+                }
+            }
+            xhr.send();
+        </script>
+        <!--  一言迁移 -->
+
+
         <hgroup>
           <h1 class="header-author"><a href="<%= config.root %>"><%=theme.author%></a></h1>
         </hgroup>
 
         <% if (theme.subtitle){ %>
             <!--   原个性签名    -->
-        <!-- <p class="header-subtitle"><%=theme.subtitle%></p>-->
-
-            <div style="margin: 0 auto;text-align: left;font-size: 16px;color: #444;font-family: 宋体;font-weight: bold;">
-                <span id="hitokoto">获取中...</span>
-                <p style="text-align: right">
-                    <span>——</span>
-                    <span id="from"></span>
-                </p>
-            </div>
-
-            <script>
-                var xhr = new XMLHttpRequest();
-                xhr.open('get', 'https://v1.hitokoto.cn/?c=b&c=a&c=d&length=12');
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4) {
-                        var data = JSON.parse(xhr.responseText);//获得字符串形式的响应数据。
-                        var hitokoto = document.getElementById('hitokoto');
-                        var fromm=document.getElementById("from")
-                        fromm.innerText=data.from;
-                        hitokoto.innerText = data.hitokoto;
-                    }
-                }
-                xhr.send();
-            </script>
+         <p class="header-subtitle"><%=theme.subtitle%></p>
         <%}%>
 
         <% if (theme.search.on){ %>
@@ -138,8 +143,8 @@
         </div>
 
         <!-- 底部一言 -->
-        <!--<p id="hitokoto">获取中...</p>-->
-        <!--<div style="border: 1px solid black;margin: 0 auto;text-align: left;font-size: medium">
+<!--        <p id="hitokoto">获取中...</p>
+        <div style="border: 1px solid black;margin: 0 auto;text-align: left;font-size: medium">
             <span id="hitokoto">获取中...</span>
             <p style="text-align: right">
                 <span>——</span>

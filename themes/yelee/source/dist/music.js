@@ -1,7 +1,7 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
 	order: 'random',
-	autoplay: true,
+	autoplay: false,
 	fixed: true,
 	preload: 'auto',
 	//loop: '',
