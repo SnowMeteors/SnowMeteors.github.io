@@ -11,9 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="85d7e442-6b3f-44e6-a210-0f60d90d4589" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/archive.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/archive.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/page.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/page.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/post/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/post/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/article.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/article.styl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +150,8 @@
       <workItem from="1604228346833" duration="4095000" />
       <workItem from="1606036310758" duration="1680000" />
       <workItem from="1606958627348" duration="1830000" />
+      <workItem from="1607422133344" duration="3570000" />
+      <workItem from="1607429084738" duration="1243000" />
     </task>
     <servers />
   </component>
@@ -162,9 +163,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="456" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604228130574" />
-    <state x="729" y="407" width="746" height="600" key="find.popup" timestamp="1606959035356">
+    <state x="84" y="120" width="1492" height="920" key="find.popup" timestamp="1607429938129">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="729" y="407" width="746" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606959035356" />
+    <state x="84" y="120" width="1492" height="920" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607429938129" />
   </component>
 </project>
