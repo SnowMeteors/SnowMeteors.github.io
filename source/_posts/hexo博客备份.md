@@ -36,13 +36,12 @@ git push origin hexo			//将hexo分支提交到github上去
 
 你提交分支可能会失败，这里每个人的情况不一样，根据报错信息,自己解决，我反正搞了很久才提交成功。
 提交成功后，你可以看到github上有两个分支如图所示.
-![](hexo博客备份/successful.png)
+<img src="https://s3.ax1x.com/2020/12/25/rfFpHx.png">
 
 ### 安装hexo备份插件
 
 输入命令`hexo version`查看Hexo版本
-
-![](hexo博客备份/hexo_version.png)
+<img src="https://s3.ax1x.com/2020/12/25/rfFCE6.png">
 
 Hexo版本是2.x.x使用以下命令,我的版本可以看到是4.2.0
 
@@ -81,8 +80,7 @@ hexo b
 
 备份成功后，你将在你的分支下看到备份好的数据
 
-![](hexo博客备份/backup.png)
-
+<img src="https://s3.ax1x.com/2020/12/25/rfFmDI.png">
 如果你没有备份成功，那么请使用hexo b后再使用git push origin hexo命令,反正我是没有备份成功后，找了半天教程，才发现这样我才能备份成功，无语了。
 
 以上内容我不能保证你100%成功，那么请善用搜索引擎，成功绝对不是偶然。

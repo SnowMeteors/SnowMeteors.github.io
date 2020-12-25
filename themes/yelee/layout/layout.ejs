@@ -24,6 +24,52 @@
   <!--  代码高亮 -->
   <link type="text/css" rel="stylesheet" href="/css/prism.css">
 
+  <!-- imgbox -->
+  <link type="text/css" rel="stylesheet" href="/imgbox/imgbox.css">
+  <script type="text/javascript" src="/imgbox/jquery.imgbox.js"></script>
+  <!--  imgbox配置 将所有class="img"的添加这个玩意 -->
+  <script type="text/javascript">
+    //查看源码知道对方是先给img 加上imgbox 所以先要有这个属性
+    $(".article-entry img").wrap('<a class="img" />');
+
+
+    $(".img").imgbox({
+      padding: 10, // Set the padding/transparent border around the image.
+      border: 0,
+      alignment: 'center', // Position - may be auto OR center.
+      allowMultiple: false, // Allow opening multiple imgBoxes.
+      autoScale: true, // Scale the image to fit the available space.
+      speedIn: 400, // Set the zoom-in speed.
+      speedOut: 400, // Set the zoom-out speed.
+      easingIn: 'swing', // Set the zoom-in animation easing.
+      easingOut: 'swing', // Set the zoom-out animation easing.
+      zoomOpacity: false, // If true, changes image transparency when zooming.
+      overlayShow: true, // Display an overlay under the imgBox.
+      overlayOpacity: 0.5, // Set overlay opacity.
+      hideOnOverlayClick: true, // Hide imgBox when the overlay is clicked.
+      hideOnContentClick: true, // Hide imgBox when the image is clicked.
+      slideshow: false, // Display next/previous controls.
+      theme: 'light' // Choose a color scheme (light/black).
+    });
+
+  // 获取所有class是img的对象
+    var imgs = document.getElementsByClassName("img");
+    if(imgs.length > 0 && imgs)
+    {
+
+        for (var i = 0;i < imgs.length;i++)
+        {
+          //让a.href=img.data-original
+          var img = imgs[i].getElementsByTagName("img");
+          imgs[i].setAttribute('href',img[0].getAttribute('data-original'));
+          // console.log(img[0].getAttribute('data-original'));
+        }
+    }
+
+  </script>
+
+
+
 
 </body>
 </html>

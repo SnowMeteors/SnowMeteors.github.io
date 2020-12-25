@@ -294,7 +294,7 @@ progressBar:
   color: orange
 
 CDN:
-  jquery: //cdn.bootcss.com/jquery/2.2.4/jquery.min.js
+  jquery: //cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js
   require: //cdn.bootcss.com/require.js/2.2.0/require.min.js
   fontawesome: //cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css
 #  fancybox_js: //cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js
