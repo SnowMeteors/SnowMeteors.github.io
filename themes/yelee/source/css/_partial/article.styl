@@ -425,7 +425,7 @@ li:hover {
   left: left-col-width - 90px;
   top: toc-top + 17;
   background: none;
-  font-size: .9em;
+  font-size: 1.0em;
   font-weight: bold;
   color: rgba(0,0,0,0.6); // Hide 颜色
   cursor: pointer
@@ -433,7 +433,7 @@ li:hover {
   outline: none; /*Remove button border when clicked.*/
   -webkit-appearance: none; /*Remove iOS button style*/
   &:hover {
-    color: #88acdb;
+    color: rgba(255,255,255,0.7);
   }
 }
 .toc-article {
@@ -450,8 +450,9 @@ li:hover {
 }
 #toc {
   float: right;
-  font-size: .9rem;
+  //font-size: .9rem;
   line-height: 1.65em;
+  font-family: 'PingFang SC','Microsoft YaHei',sans-serif,Arial;
   a {
     color: rgba(0,0,0,0.7);  //修改目录颜色
     &:visited {   //修改目录已访问颜色

@@ -11,7 +11,9 @@ date: 2020-01-06 19:29:42
 <div style="text-align:right">——《查理九世》</div>
 
 ## 新的篇章
-
+### 2020-12-21
+　　最近太忙了，忽然多一些期末课设，设计报告等等，woc，电子都没复习完，从0开始。还有蓝桥杯奖状发下来了，听他们其他人说，他们还有包纸的壳子。我这就只有一张纸。。
+　　<img src="https://s3.ax1x.com/2020/12/24/r2mIbR.jpg" height="65%">
 ### 2020-10-26
 　　第一次提交漏洞，并审核通过。
 　　<img src="https://s3.ax1x.com/2020/11/22/D8f8bD.png"><img src="https://s3.ax1x.com/2020/11/22/D8fJVe.png">
@@ -100,9 +102,3 @@ date: 2020-01-06 19:29:42
 ## 某段回忆
 　　写过几次日记，都是关于初中时的有趣事情，一年仅写一篇。某天将日记带到学校去分享后，大家笑了我也笑了，到了第二天放在我书包里的日记不翼而飞了，就这样我的初中回忆就这样到了不知某人的手里，我失去了只写了两页的本子(可能TA还以为我写了很多吧)和那段完整而有趣的回忆。所以好的东西给真正懂你的人去分享吧，是那么的美好与青涩。
 
-
-<link rel="stylesheet" href="/dist/APlayer.min.css">
-<div id="aplayer"></div>
-<script type="text/javascript" src="/dist/APlayer.min.js"></script>
-<script type="text/javascript" src="/dist/music.js"></script>
-<script type="text/javascript" src="/dist/color-thief.js"></script>

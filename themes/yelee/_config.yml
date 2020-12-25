@@ -7,11 +7,11 @@ Yelee: "3.5"
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  主页: /
-  所有文章: /archives/
+  #主页: /
+  所有文章: /archives/index.html
   #随笔: /tags/随笔
-  标签云: /tags/
-  关于我: /about/
+  标签云: /tags/index.html
+  关于我: /about/index.html
 
 # Link to your avatar | 填写头像地址
 avatar: https://s1.ax1x.com/2020/04/18/JmkHGq.jpg
@@ -29,7 +29,7 @@ favicon: /img/favicon.ico
 ## If your site' url is 'http://yoursite.com/blog', set root_url as '/blog/'
 ## 网站若存放在子目录，请按上面格式填写
 ## https://hexo.io/docs/configuration.html#URL
-root_url: 
+root_url:
 
 # Year of Site Creation | 网站成立年份
 since: 2020
@@ -237,14 +237,14 @@ tab_title_change:
 ## Insatall below plugin to take effect | 使用搜索需先安装对应插件
 ## https://github.com/PaicHyperionDev/hexo-generator-search
 search: 
-#  on: true
-  on: false
+  on: true
+#  on: false
   ## true: get search.xml file when the page has loaded
   ## false: get the file when search box gets focus
 
 # images viewer | 图片浏览器
 ## http://www.fancyapps.com/fancybox/
-fancybox: true
+fancybox: false
 
 # Display Math(LaTeX, MathML...) | 数学公式支持
 ## https://www.mathjax.org/
@@ -252,8 +252,8 @@ mathjax: false
 
 # Socail Share | 是否开启分享
 share: 
-  on: true
-  baidu: true
+  on: false
+  baidu: false
   addthis: false
   addthis_pubid: "ra-56ff76c972fc0cf9"
   ## Go to www.addthis.com/dashboard to get your pubid (in src of Code)
@@ -299,18 +299,24 @@ CDN:
   fontawesome: //cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css
 #  fancybox_js: //cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js
 #  fancybox_css: //cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css
-  fancybox_js: //cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js
-  fancybox_css: //cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css
+#  fancybox_js: //cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js
+#  fancybox_css: //cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css
   animate_css: //cdn.bootcss.com/animate.css/3.5.1/animate.min.css
   jquery_ui_js: //cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js
   jquery_ui_css: //cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css
   pace_js: //cdn.bootcss.com/pace/1.0.2/pace.min.js
   mathjax: //cdn.bootcss.com/mathjax/2.6.1/MathJax.js
-  scrollreveal: //cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js
- 
+  scrollreveal: https://cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js
+
 # visitors count
 counter: true
 
 aplayer:
   enable: true
+
+
+
+
+
+
 

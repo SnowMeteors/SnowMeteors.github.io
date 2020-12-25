@@ -19,7 +19,7 @@ dpkg -i jenkins_1.621_all.deb # 安装
 sudo apt-get -f --fix-missing install # 如果有报依赖项的错误时执行
 ```
 
-<img src="https://s3.ax1x.com/2020/12/01/DfHnoQ.png">
+<img src="https://s3.ax1x.com/2020/12/01/DfHnoQ.png"
 
 ```bash
 service jenkins start # 启动jenkins服务
@@ -45,4 +45,3 @@ service jenkins start # 启动jenkins服务
 　　1、升级版本
 　　2、添加认证
 　　3、禁止把Jenkins直接暴露在公网
-

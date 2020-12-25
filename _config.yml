@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://maidang.cool
+url: http://www.maidang.cool
 root: /
 
 
@@ -111,26 +111,6 @@ deploy:
 #不需要使用，直接设置值为false，或注释掉
 word_count: True
 
-#live2d 添加
-live2d:
-  enable: true
-  scriptFrom: local
-  tagMode: false
-  log: false
-  model:
-    use: live2d-widget-model-wanko
-  display:
-    # 水平位置
-    hOffset: -15
-    # 垂直位置
-    vOffset: -80
-    position: right
-    width: 200
-#    height: 300
-  mobile:
-    show: false     #移动端是否显示
-  react:
-    opacity: 0.6    #透明度设置
 
 #hexo b设置失败我也不知道啥原因
 #我这里的备份完整命令
@@ -143,8 +123,6 @@ backup:
   repository:
     github: git@github.com:SnowMeteors/SnowMeteors.github.io.git,hexo
 #    coding: git@git.dev.tencent.com:TRHX/TRHX.git,backup
-aplayer:
-  meting: true
 
 permalink: :year/:abbrlink.html  # 此处可以自己设置，也可以直接使用 /:abbrlink.html
 abbrlink:
@@ -157,4 +135,7 @@ pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
+lazyload:
+  enable: true
+  onlypost: false
 

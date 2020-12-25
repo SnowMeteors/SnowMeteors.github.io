@@ -15,7 +15,8 @@
             <% if (theme.open_in_new.socail) { %> socail: ".social a" <% } %>
         }
         for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
+            //…Ë÷√target Ù–‘
+            $(oOpenInNew[x]).attr("target", "go");
         }
     <% } else if (global === 1) { %>
         $("a").attr("target", "_blank");
