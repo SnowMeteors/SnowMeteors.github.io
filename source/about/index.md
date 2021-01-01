@@ -11,6 +11,20 @@ date: 2020-01-06 19:29:42
 <div style="text-align:right">——《查理九世》</div>
 
 ## 新的篇章
+### 2021-1-1
+　　敲着代码跨年，一个空调插头被我们榨干利用，这是第一次这样跨年，也许也是最后一次了
+<img width="33%" style="margin-right:0.4em"  src="https://s3.ax1x.com/2021/01/01/rxaJwd.jpg"><img src="https://s3.ax1x.com/2021/01/01/rxaGeH.jpg" style="margin-right:0.4em" width="33%"><img src="https://s3.ax1x.com/2021/01/01/rxa3Oe.jpg" width="33%">
+
+<center><b>2020 哔哩哔哩年度报告</b></center>
+<img width="30%" style="margin-right:0.5em;vertical-align:top;" src="https://s3.ax1x.com/2021/01/01/rxYE5V.md.jpg" /><img src="https://s3.ax1x.com/2021/01/01/rxYZCT.md.jpg" style="margin-right:0.5em;vertical-align:top;"  width="29%"  />
+<img style="margin-right:0.5em;vertical-align:top;" src="https://s3.ax1x.com/2021/01/01/rxYQbR.md.jpg" width="30%"  /><img style="margin-right:0.5em;vertical-align:top;"  width="30%" src="https://s3.ax1x.com/2021/01/01/rxYAU0.md.jpg" />
+<img style="margin-right:0.5em" src="https://s3.ax1x.com/2021/01/01/rxYnv4.md.jpg" width="30%"  /><img style="margin-right:0.5em;vertical-align:top;" src="https://s3.ax1x.com/2021/01/01/rxY1V1.md.jpg" width="30%" />
+<img style="margin-right:0.5em" width="30%" src="https://s3.ax1x.com/2021/01/01/rxYe8U.md.jpg" /><img src="https://s3.ax1x.com/2021/01/01/rxYm2F.md.jpg" style="margin-right:0.5em;vertical-align:top;" width="30%"  />
+<img style="margin-right:0.5em" src="https://s3.ax1x.com/2021/01/01/rxYKKJ.md.jpg" width="30%"  /><img style="margin-right:0.5em;vertical-align:top;" width="30%" src="https://s3.ax1x.com/2021/01/01/rxYMr9.md.jpg" />
+<center><b>2020 QQ音乐年度报告</b></center>
+<div><img src="https://s3.ax1x.com/2021/01/01/rxMXSs.md.jpg" style="margin-right:0.5em;vertical-align:top;" width="26%"  /><img src="https://s3.ax1x.com/2021/01/01/rxMvyq.md.jpg" style="margin-right:0.5em;vertical-align:top;"  width="31%"  /><img src="https://s3.ax1x.com/2021/01/01/rxMLWj.md.jpg" style="vertical-align:top;"  width="23%" /></div><div><img src="https://s3.ax1x.com/2021/01/01/rxMqYQ.md.jpg"  style="margin-right:0.5em;vertical-align:top;" width="25%" /><img  style="margin-right:0.5em" src="https://s3.ax1x.com/2021/01/01/rxMxO0.md.jpg" style="margin-right:0.5em;vertical-align:top;" width="27%" /><img src="https://s3.ax1x.com/2021/01/01/rxQSmV.md.jpg"  style="vertical-align:top;" width="25%" />
+</div><div><img  style="margin-right:0.5em;vertical-align:top;" src="https://s3.ax1x.com/2021/01/01/rxQpwT.md.jpg" width="26%" /><img   style="margin-right:0.5em;vertical-align:top;"  src="https://s3.ax1x.com/2021/01/01/rxQPkF.md.jpg" width="38%" /><img style="vertical-align:top;" src="https://s3.ax1x.com/2021/01/01/rxMjln.md.jpg" width="27%" /></div>
+
 ### 2020-12-25
 　　终于添加上了音乐不间断播放，图片懒加载也可以正常用了。最开始我还以为是hexo-lazyload-image 插件的问题，结果是主题自带的fancybox插件与hexo-lazyload-image插件冲突，于是果断放弃fancybox插件，然后网上自己找到了一个imgbox插件，搞了半天终于实现了fancybox一样的功能，也就是点击图片自动放大，爽啊！！
 ### 2020-12-21

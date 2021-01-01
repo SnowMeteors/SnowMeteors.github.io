@@ -79,6 +79,46 @@ if(CategoryListLink)
     }
 }
 
+var friend = document.getElementsByClassName("switch-friends-link");
+if(friend && friend.length > 0)
+{
+    for(var i = 0;i < friend.length;i++)
+    {
+        friend[i].target = "_blank";
+    }
+}
+
+var taglistlink = document.getElementsByClassName("article-tag-list-link");
+if(taglistlink && taglistlink.length > 0)
+{
+    for(var i = 0;i < taglistlink.length;i++)
+    {
+        taglistlink[i].href += "index.html";
+    }
+}
+
+var Taglink = document.getElementsByClassName("tag-list-link");
+if(Taglink && Taglink.length > 0)
+{
+    for(var i = 0;i < Taglink.length;i++)
+    {
+        Taglink[i].href += "index.html";
+    }
+}
+
+var category = document.getElementsByClassName("article-category");
+if(category)
+{
+    for(var i = 0;i < category.length;i++)
+    {
+        var a = category[i].getElementsByTagName("a");
+        if(a)
+        {
+            a[0].href += "index.html";
+        }
+    }
+}
+
 var tags = document.getElementsByClassName("tags");
 if(tags)
 {

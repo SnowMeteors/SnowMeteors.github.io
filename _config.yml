@@ -68,7 +68,16 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  黑科技: BlackTech
+  数据结构: DataStructure
+  漏洞复现: Security
+  渗透测试: PenetrationTesting
 tag_map:
+  链表: LinkedList
+  windows提权: WindowsClaim
+  音乐外链: ExternalLinks
+
+
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
