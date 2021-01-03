@@ -11,23 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85d7e442-6b3f-44e6-a210-0f60d90d4589" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.deploy_git/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/.deploy_git/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/after-footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/after-footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/background.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/background.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/head.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/_partial/post/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/_partial/post/nav.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/layout/layout.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/customise/social-icon.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/customise/social-icon.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/footer.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/footer.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/main.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/main.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/css/_partial/mobile.styl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/css/_partial/mobile.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/pc.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/pc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yelee/source/js/src/love.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yelee/source/js/src/love.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +173,7 @@
       <workItem from="1609585040285" duration="7715000" />
       <workItem from="1609649828406" duration="3210000" />
       <workItem from="1609654421688" duration="878000" />
+      <workItem from="1609669836164" duration="161000" />
     </task>
     <servers />
   </component>
