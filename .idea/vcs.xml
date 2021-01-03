@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/.deploy_git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CDN" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/SnowMeteors.github.io" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/themes/yelee/source/lib/pjax" vcs="Git" />
   </component>

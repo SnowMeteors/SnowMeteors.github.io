@@ -39,10 +39,11 @@
 
 <% if (theme.progressBar.on) { %>
     <script src="<%- theme.CDN.pace_js %>"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/<%= theme.progressBar.color || 'blue'%>/pace-theme-<%= theme.progressBar.type || 'minimal'%>.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/pace/1.2.3/themes/<%= theme.progressBar.color || 'blue'%>/pace-theme-<%= theme.progressBar.type || 'minimal'%>.css" rel="stylesheet">
 <% } %>
 
-<%- css('css/style') %>
+<!-- 更新style.css -->
+<%- css('https://cdn.jsdelivr.net/gh/SnowMeteors/CDN@latest/css/style.css') %>
 
 <% if (is_home() && theme.animate){ %>
     <style> .article { opacity: 0;} </style>

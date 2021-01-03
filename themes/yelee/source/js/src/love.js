@@ -156,20 +156,3 @@ if(soicals.length !== 0)
         social[i].target = "_blank";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

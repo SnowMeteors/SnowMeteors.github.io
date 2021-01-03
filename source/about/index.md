@@ -11,6 +11,8 @@ date: 2020-01-06 19:29:42
 <div style="text-align:right">——《查理九世》</div>
 
 ## 新的篇章
+### 2021-1-3
+　　博客接入jsdeliver cdn，全面提升博客访问速度，差不多1s就能打开了，感谢jsdeliver和github的开源精神，解决个人博客访问速度问题
 ### 2021-1-1
 　　敲着代码跨年，一个空调插头被我们榨干利用，这是第一次这样跨年，也许也是最后一次了
 <img width="33%" style="margin-right:0.4em"  src="https://s3.ax1x.com/2021/01/01/rxaJwd.jpg"><img src="https://s3.ax1x.com/2021/01/01/rxaGeH.jpg" style="margin-right:0.4em" width="33%"><img src="https://s3.ax1x.com/2021/01/01/rxa3Oe.jpg" width="33%">

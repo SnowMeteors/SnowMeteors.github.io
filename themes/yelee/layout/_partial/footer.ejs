@@ -1,6 +1,6 @@
 <footer id="footer">
     <div class="outer">
-        <div id="footer-info">
+        <div id="footer-info" >
             <div class="footer-left">
                 <i class="fa fa-copyright"></i>
                 <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since %>
@@ -13,30 +13,45 @@
             </div>
         </div>
         <% if (theme.visit_counter.on) { %>
-            <div class="visit">
-                <% if (theme.visit_counter.site_visit) { %>
-                    <span style='display:inline'>
-                        <span id="site-visit" title="<%= __('visit_counter.site') %>"><i class="fa fa-user"
-                                                                                         aria-hidden="true"></i><span
-                                    id="busuanzi_value_site_uv"></span>
+            <div class="visit" style="text-align: center;position: relative;top: -13px">
+
+                    <% if (theme.visit_counter.site_visit) { %>
+                        <span style='font-weight: bolder'>
+                        <span id="site-visit" title="总访客量">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
-                <% } %>
+                    <% } %>
 
-                <% if (theme.visit_counter.site_visit && theme.visit_counter.page_visit) { %>
-                    <span>| </span>
-                <% } %>
+                    <% if (theme.visit_counter.site_visit && theme.visit_counter.page_visit) { %>
+                        <span> | </span>
+                    <% } %>
 
-                <% if (theme.visit_counter.page_visit) { %>
-                    <span style='display:inline'>
-                        <span id="page-visit" title="<%= __('visit_counter.page') %>"><i class="fa fa-eye"
-                                                                                         aria-hidden="true"></i><span
-                                    id="busuanzi_value_site_pv"></span>
+                    <% if (theme.visit_counter.page_visit) { %>
+                        <span style='font-weight: bolder'>
+                        <span id="page-visit" title="总访问量">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span id="busuanzi_value_site_pv"></span>
                         </span>
                     </span>
-                <% } %>
+                        <span> | </span>
+                        <span title="站点总字数" id="total-word">
+                            <i class="fa fa-map" aria-hidden="true"></i>
+                            <span class="post-count"><b><%= totalcount(site) %></b></span>
+                        </span>
+
+                        <span> | </span>
+                        <span title="JsDelivr提供cdn加速">
+                            <img style="position: relative;top: 5px" width="70px" height="20px" alt="jsdelivr" src="https://cdn.jsdelivr.net/gh/SnowMeteors/CDN@latest/img/jsdeliver.png" />
+                        </span>
+                    <% } %>
+
                 <br/>
-                <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                <span style="position: relative;top: 7px">
+                    <span  id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                </span>
+
                 <script>
                     var now = new Date();
 
@@ -73,4 +88,4 @@
 
     </div>
 </footer>
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js"></script>

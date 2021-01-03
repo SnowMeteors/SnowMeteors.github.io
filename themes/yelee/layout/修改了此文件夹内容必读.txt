@@ -1,0 +1,1 @@
+修改了记得重新hexo g把style.css传到cdn上去，并且替换 head.ejs 第46行的style.css地址

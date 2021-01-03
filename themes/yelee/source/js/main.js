@@ -2,18 +2,23 @@ require([], function (){
 
     var isMobileInit = false;
     var loadMobile = function(){
-        require([yiliaConfig.rootUrl + 'js/mobile.js'], function(mobile){
+        //mobile.js
+        // require([yiliaConfig.rootUrl + 'js/mobile.js'], function(mobile){
+        //更新mobile.js
+        require(['mobile.js'], function(mobile){
             mobile.init();
             isMobileInit = true;
         })
-    }
+    };
     var isPCInit = false;
     var loadPC = function(){
-        require([yiliaConfig.rootUrl + 'js/pc.js'], function(pc){
+        //更新pc.js
+        // require([yiliaConfig.rootUrl + 'js/pc.js'], function(pc){
+        require(['pc.js'], function(pc){
             pc.init();
             isPCInit = true;
         })
-    }
+    };
 
     var browser = {
         versions: function() {
@@ -152,7 +157,7 @@ require([], function (){
 
     // TOC
     if (yiliaConfig.toc) {
-        require(['toc'], function(){ })
+        require(['toc.js'], function(){ })
     }
 
     // Random Color 边栏顶部随机颜色

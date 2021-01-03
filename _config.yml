@@ -118,7 +118,7 @@ deploy:
 
 # 是否开启字数统计
 #不需要使用，直接设置值为false，或注释掉
-word_count: True
+word_count: true
 
 
 #hexo b设置失败我也不知道啥原因

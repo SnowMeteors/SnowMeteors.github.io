@@ -1,7 +1,10 @@
 <% if (theme.github_widget){ %>
     <%- js('js/GithubRepoWidget') %>
 <% } %>
-<script data-main="<%-config.root%>js/main.js" src="<%- theme.CDN.require %>"></script>
+<!--main.js-->
+<!--<script data-main="<%-config.root%>js/main.js" src="<%- theme.CDN.require %>"></script>-->
+<!-- ¸üĞÂmain.js -->
+<script data-main="https://cdn.jsdelivr.net/gh/SnowMeteors/CDN@1.4/js/main.js" src="<%- theme.CDN.require %>"></script>
 <%- partial('_partial/background') %>
 <%- partial('comments/count-comment') %>
 <%- partial('google-analytics') %>
