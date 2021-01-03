@@ -1,5 +1,0 @@
-进入cdn路径
-git status 查看状态
-git add .
-git commit -m "更新cdn库"
-git push
